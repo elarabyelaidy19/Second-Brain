@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "c4a448b998172049",
+        "id": "e65bffc817bf0322",
         "type": "tabs",
         "children": [
           {
-            "id": "1a01bd76fc8354d6",
+            "id": "92dd796d8c287a5c",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Database Systems/DB Theory.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Database Systems/DB Theory.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Database Systems/DB Theory.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Database Systems/DB Theory.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -147,8 +139,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5b00dfb9b3b941f7",
+  "active": "92dd796d8c287a5c",
   "lastOpenFiles": [
+    "Programming Languages/Talking Objects.md",
+    "Memory Management.md",
+    "Ruby.md",
+    "Programming Languages/Concurrencey.md",
+    "Tools/AWS.md",
+    "Tools/GIT.md",
+    "Tools/Docker.md",
+    "Programming Languages/Incapsulation.md",
+    "Database Systems/DB Theory.md",
+    "Programming Languages/Object Oreinted Design.md",
     "Database Systems/img/db9.png",
     "Database Systems/img/db8.png",
     "Database Systems/img/db7.png",
@@ -159,14 +161,11 @@
     "Database Systems/img/db52.png",
     "Database Systems/img/db51.png",
     "Database Systems/img/db50.png",
-    "Database Systems/img/db5.png",
     "Database Systems/img",
     "Data Structures And Algorithms/Theory.md",
-    "Programming Languages/Programming MKC.md",
     "README.md",
     "Data Structures And Algorithms/sql-notes.md",
     "Data Structures And Algorithms/notes.md",
-    "Database Systems/DB Theory.md",
     "Data Structures And Algorithms/Week 01.md",
     "Data Structures And Algorithms/Week 07.md",
     "Data Structures And Algorithms/Week 06.md",
@@ -182,16 +181,9 @@
     "Data Structures And Algorithms/Week 13/Radix Sorts.md",
     "Data Structures And Algorithms/Week 13",
     "Data Structures And Algorithms/Week 12/Sorting and Algorithmic Bounds.md",
-    "Data Structures And Algorithms/Week 12/More Quick Sort, Sorting Summary.md",
     "Data Structures And Algorithms/Week 12",
-    "Data Structures And Algorithms/Week 11/Quick Sort.md",
-    "Data Structures And Algorithms/Week 11/Basic Sorts.md",
     "Data Structures And Algorithms/Week 11",
-    "Data Structures And Algorithms/Week 10/Reductions and Decomposition.md",
-    "Data Structures And Algorithms/Week 10/Minimum Spanning Trees.md",
     "Data Structures And Algorithms/Week 10",
-    "Data Structures And Algorithms/Week 09/Tree and Graph Traversals.md",
-    "Data Structures And Algorithms/Week 09/Shortest Paths.md",
     "Data Structures And Algorithms/Week 09",
     "Data Structures And Algorithms/Week 08",
     "Data Structures And Algorithms/image"
