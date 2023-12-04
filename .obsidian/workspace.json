@@ -1,0 +1,197 @@
+{
+  "main": {
+    "id": "0d1f18d2f9662714",
+    "type": "split",
+    "children": [
+      {
+        "id": "e8fbfcd3e180671f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ac8bd3553f401587",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Data Structures And Algorithms/Theory.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "8ce4166412758333",
+    "type": "split",
+    "children": [
+      {
+        "id": "f28bb6023c39fbf1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5b00dfb9b3b941f7",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "37752cb0cb9fb36c",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "5347bd95e7600aec",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "7debb31e44c477f5",
+    "type": "split",
+    "children": [
+      {
+        "id": "c2b37d6fd6592bac",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "04172cd3e30c1ce1",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Data Structures And Algorithms/Theory.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "25aeb277743f4b2e",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Data Structures And Algorithms/Theory.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "37c0187e7139b32c",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "f63d2f53cde80582",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Data Structures And Algorithms/Theory.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "5b00dfb9b3b941f7",
+  "lastOpenFiles": [
+    "Data Structures And Algorithms/sql-notes.md",
+    "Data Structures And Algorithms/notes.md",
+    "Data Structures And Algorithms/Theory.md",
+    "Database Systems/combined_doc.md",
+    "Data Structures And Algorithms/Week 01.md",
+    "Data Structures And Algorithms/image/ADTs.png",
+    "Data Structures And Algorithms/image/ADT.png",
+    "Data Structures And Algorithms/Week 07.md",
+    "Data Structures And Algorithms/Week 06.md",
+    "Data Structures And Algorithms/Week 05.md",
+    "Data Structures And Algorithms/Week 04.md",
+    "Data Structures And Algorithms/Week 03.md",
+    "Data Structures And Algorithms/Week 02.md",
+    "Data Structures And Algorithms/combine.rb",
+    "Data Structures And Algorithms/Week 14/Compression.md",
+    "Data Structures And Algorithms/Week 14/Compression, Complexity, and P=NP.md",
+    "Data Structures And Algorithms/Week 14",
+    "Data Structures And Algorithms/Week 13/Sorting and Data Structures Conclusion.md",
+    "Data Structures And Algorithms/Week 13/Radix Sorts.md",
+    "Data Structures And Algorithms/Week 13",
+    "Data Structures And Algorithms/Week 12/Sorting and Algorithmic Bounds.md",
+    "Data Structures And Algorithms/Week 12/More Quick Sort, Sorting Summary.md",
+    "Data Structures And Algorithms/Week 12",
+    "Data Structures And Algorithms/Week 11/Quick Sort.md",
+    "Data Structures And Algorithms/Week 11/Basic Sorts.md",
+    "Data Structures And Algorithms/Week 11",
+    "Data Structures And Algorithms/Week 10/Reductions and Decomposition.md",
+    "Data Structures And Algorithms/Week 10/Minimum Spanning Trees.md",
+    "Data Structures And Algorithms/Week 10",
+    "Data Structures And Algorithms/Week 09/Tree and Graph Traversals.md",
+    "Data Structures And Algorithms/Week 09/Shortest Paths.md",
+    "Data Structures And Algorithms/Week 09/Graph Traversals and Implementations.md",
+    "Data Structures And Algorithms/Week 09",
+    "Data Structures And Algorithms/Week 08/Range Searching and Multi-Dimensional Data.md",
+    "Data Structures And Algorithms/Week 08/Prefix Operations and Tries.md",
+    "Data Structures And Algorithms/Week 08",
+    "Data Structures And Algorithms/image/trie1.png",
+    "Data Structures And Algorithms/image/tree1.png",
+    "Data Structures And Algorithms/image/PQtry.png",
+    "Data Structures And Algorithms/image/PQin.png",
+    "Data Structures And Algorithms/image/MST9.png",
+    "Data Structures And Algorithms/image/MST8.png",
+    "Data Structures And Algorithms/image/MST7.png",
+    "Data Structures And Algorithms/image/MST6.png",
+    "Data Structures And Algorithms/image",
+    "Tools"
+  ]
+}
