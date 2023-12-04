@@ -1,6 +1,3 @@
-# File: combined_doc.md
-
-
 
 
 # File: DBDesign.md
@@ -74,11 +71,11 @@ Big data is characterized by those characteristic:
 ### Why traditional DBMS does not works at that scale? 
 
 
-## Data Properities 
-- Raw: the rawer the data the more valueable it is. 
+## Data Prosperities 
+- Raw: the rawer the data the more valuable it is. 
 - Immutable: events once happens it's a fact, it is not change. no updates is permitted updating value require to create a new record with the new values keeping the old value the same.
-    - human fault-tolerance you can rollback from faults easly, more storage, processing. 
-    - scarifce mutating data makes concurrencey control not used.
+    - human fault-tolerance you can rollback from faults eastly, more storage, processing. 
+    - sacrifice mutating data makes concurrency control not used.
 - Eternal: a piece of data, once true, always be true.
 
 
@@ -105,7 +102,7 @@ Big data is characterized by those characteristic:
 - ### Solid State Disk 
 
 ## Block Level Storage
-- Read and write large chunks of data sequnetially. 
+- Read and write large chunks of data sequentially. 
 - maximize use of data 
     - cache popularly used data in memory.
     - pre-fetch data likely to be accessed data. 
@@ -230,12 +227,12 @@ library that takes care of the on disk storage and crud
 
 
 ## Indexing 
-- index is a data structure that allows you speed up reads on a speicific key. it's make queries run faster especially those that are run frequently. 
+- index is a data structure that allows you speed up reads on a specific key. it's make queries run faster especially those that are run frequently. 
 - index on the user id is a good example of an index. 
 
 
 ## Primary Key Vs Secondary key
-- the primary key is about clusetering the heap about this key and we have to maintain order. called **Index Organized Table** in oracle. 
+- the primary key is about clustering the heap about this key and we have to maintain order. called **Index Organized Table** in oracle. 
 - The secondary Key is a pointer to row on the disk it's not ordered.
 - in postgres there is no more than secondary index. 
 
@@ -247,7 +244,7 @@ library that takes care of the on disk storage and crud
 ## B+ Trees 
 - B+ tree have very high **Fan-out**: number of pointers to child nodes in a node. 
 - B+ tree is a **self-balancing** tree, grows at root not leaves.
-- strores data entries in **leaf nodes** only, thus called B Plus Tree. 
+- store data entries in **leaf nodes** only, thus called B Plus Tree. 
 - **Order** is the number of children nodes for internal nodes. it's measure capacity of a nodes.  
 - the number of entries for each internal node must satisfy **d < entries < 2d**.  
 - Max fan-out is **2d + 1** == num of pointers.  

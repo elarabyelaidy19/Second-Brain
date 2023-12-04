@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "e8fbfcd3e180671f",
+        "id": "c4a448b998172049",
         "type": "tabs",
         "children": [
           {
-            "id": "ac8bd3553f401587",
+            "id": "1a01bd76fc8354d6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Data Structures And Algorithms/Theory.md",
+                "file": "Database Systems/DB Theory.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,11 +85,11 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Data Structures And Algorithms/Theory.md",
-                "collapseAll": false,
-                "extraContext": false,
+                "file": "Database Systems/DB Theory.md",
+                "collapseAll": true,
+                "extraContext": true,
                 "sortOrder": "alphabetical",
-                "showSearch": false,
+                "showSearch": true,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Data Structures And Algorithms/Theory.md",
+                "file": "Database Systems/DB Theory.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,15 +125,17 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Data Structures And Algorithms/Theory.md"
+                "file": "Database Systems/DB Theory.md"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -147,13 +149,25 @@
   },
   "active": "5b00dfb9b3b941f7",
   "lastOpenFiles": [
+    "Database Systems/img/db9.png",
+    "Database Systems/img/db8.png",
+    "Database Systems/img/db7.png",
+    "Database Systems/img/db6.png",
+    "Database Systems/img/db55.png",
+    "Database Systems/img/db54.png",
+    "Database Systems/img/db53.png",
+    "Database Systems/img/db52.png",
+    "Database Systems/img/db51.png",
+    "Database Systems/img/db50.png",
+    "Database Systems/img/db5.png",
+    "Database Systems/img",
+    "Data Structures And Algorithms/Theory.md",
+    "Programming Languages/Programming MKC.md",
+    "README.md",
     "Data Structures And Algorithms/sql-notes.md",
     "Data Structures And Algorithms/notes.md",
-    "Data Structures And Algorithms/Theory.md",
-    "Database Systems/combined_doc.md",
+    "Database Systems/DB Theory.md",
     "Data Structures And Algorithms/Week 01.md",
-    "Data Structures And Algorithms/image/ADTs.png",
-    "Data Structures And Algorithms/image/ADT.png",
     "Data Structures And Algorithms/Week 07.md",
     "Data Structures And Algorithms/Week 06.md",
     "Data Structures And Algorithms/Week 05.md",
@@ -178,20 +192,8 @@
     "Data Structures And Algorithms/Week 10",
     "Data Structures And Algorithms/Week 09/Tree and Graph Traversals.md",
     "Data Structures And Algorithms/Week 09/Shortest Paths.md",
-    "Data Structures And Algorithms/Week 09/Graph Traversals and Implementations.md",
     "Data Structures And Algorithms/Week 09",
-    "Data Structures And Algorithms/Week 08/Range Searching and Multi-Dimensional Data.md",
-    "Data Structures And Algorithms/Week 08/Prefix Operations and Tries.md",
     "Data Structures And Algorithms/Week 08",
-    "Data Structures And Algorithms/image/trie1.png",
-    "Data Structures And Algorithms/image/tree1.png",
-    "Data Structures And Algorithms/image/PQtry.png",
-    "Data Structures And Algorithms/image/PQin.png",
-    "Data Structures And Algorithms/image/MST9.png",
-    "Data Structures And Algorithms/image/MST8.png",
-    "Data Structures And Algorithms/image/MST7.png",
-    "Data Structures And Algorithms/image/MST6.png",
-    "Data Structures And Algorithms/image",
-    "Tools"
+    "Data Structures And Algorithms/image"
   ]
 }
