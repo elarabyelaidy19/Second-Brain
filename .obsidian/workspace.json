@@ -4,16 +4,28 @@
     "type": "split",
     "children": [
       {
-        "id": "e65bffc817bf0322",
+        "id": "4256127bce7e4af3",
         "type": "tabs",
         "children": [
           {
-            "id": "92dd796d8c287a5c",
+            "id": "5bb399add7fafbbc",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "Programming Languages/Memory Management.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7a1901f0d3dca635",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Formatting.md",
                 "mode": "source",
                 "source": false
               }
@@ -147,12 +159,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "92dd796d8c287a5c",
+  "active": "5bb399add7fafbbc",
   "lastOpenFiles": [
+    "Formatting.md",
+    "Memory.md",
+    "Programming Languages/Memory Management.md",
+    "Programming Languages/Object Oreinted Design.md",
     "TIL/2023-12-05.md",
     "TIL",
     "Programming Languages/Talking Objects.md",
-    "Programming Languages/Memory Management.md",
     "Programming Languages/Ruby.md",
     "Programming Languages/Concurrencey.md",
     "Tools/AWS.md",
@@ -160,7 +175,6 @@
     "Tools/Docker.md",
     "Programming Languages/Incapsulation.md",
     "Database Systems/DB Theory.md",
-    "Programming Languages/Object Oreinted Design.md",
     "Database Systems/img/db9.png",
     "Database Systems/img/db8.png",
     "Database Systems/img/db7.png",
@@ -187,8 +201,6 @@
     "Data Structures And Algorithms/Week 14/Compression.md",
     "Data Structures And Algorithms/Week 14/Compression, Complexity, and P=NP.md",
     "Data Structures And Algorithms/Week 14",
-    "Data Structures And Algorithms/Week 13/Sorting and Data Structures Conclusion.md",
-    "Data Structures And Algorithms/Week 13/Radix Sorts.md",
     "Data Structures And Algorithms/Week 13",
     "Data Structures And Algorithms/Week 12",
     "Data Structures And Algorithms/Week 11",
