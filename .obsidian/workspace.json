@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "89e939b20f136990",
+        "id": "2e4242c1dc6d2f14",
         "type": "tabs",
         "children": [
           {
-            "id": "829c8fd917e2e80f",
+            "id": "7c78510e65593885",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "System Engineering/Computer Networking Fundamentals.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "System Engineering/Computer Networking Fundamentals.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "System Engineering/Computer Networking Fundamentals.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "System Engineering/Computer Networking Fundamentals.md"
+              }
             }
           }
         ],
@@ -139,24 +147,29 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "829c8fd917e2e80f",
+  "active": "5b00dfb9b3b941f7",
   "lastOpenFiles": [
+    "System Engineering/network/printMe.pdf",
+    "System Engineering/network/README.md",
+    "Tools/GIT.md",
+    "System Engineering/Computer Networking Fundamentals.md",
+    "System Engineering/Img/udp_segment.png",
+    "System Engineering/Img/type_of_delays.png",
+    "System Engineering/Img/three-way.png",
+    "System Engineering/Img/tcp-segment.png",
+    "System Engineering/Img/tcp-end.png",
+    "System Engineering/Img/sslrecord.png",
+    "System Engineering/Img/riphop.png",
+    "System Engineering/Img/network_of_networks.png",
+    "System Engineering/Img/nat.png",
+    "System Engineering/Img/ipv6datagram.png",
+    "System Engineering/Img",
+    "System Engineering/Operating Systems Fundamentals.md",
     "Rails/Database.md",
     "Formatting.md",
     "Rails",
     "Ruby",
     "README.md",
-    "System Engineering/Operating Systems Fundamentals.md",
-    "System Engineering/assets/ucbOS_two.png",
-    "System Engineering/assets/ucbOS_three.png",
-    "System Engineering/assets/ucbOS_ten.png",
-    "System Engineering/assets/ucbOS_six.png",
-    "System Engineering/assets/ucbOS_seven.png",
-    "System Engineering/assets/ucbOS_one.png",
-    "System Engineering/assets/ucbOS_nine.png",
-    "System Engineering/assets/ucbOS_four.png",
-    "System Engineering/assets/ucbOS_five.png",
-    "System Engineering/assets/ucbOS_eight.png",
     "System Engineering/assets/AI_UCB_.19png",
     "System Engineering/assets",
     "Programming Languages/Memory Management.md",
@@ -168,7 +181,6 @@
     "Ruby/Ruby.md",
     "Programming Languages/Concurrencey.md",
     "Tools/AWS.md",
-    "Tools/GIT.md",
     "Tools/Docker.md",
     "Programming Languages/Incapsulation.md",
     "Database Systems/DB Theory.md",
@@ -180,12 +192,7 @@
     "Data Structures And Algorithms/Week 07.md",
     "Data Structures And Algorithms/Week 06.md",
     "Data Structures And Algorithms/Week 05.md",
-    "Data Structures And Algorithms/Week 04.md",
-    "Data Structures And Algorithms/Week 03.md",
-    "Data Structures And Algorithms/Week 02.md",
     "Data Structures And Algorithms/combine.rb",
-    "Data Structures And Algorithms/Week 14",
-    "Data Structures And Algorithms/Week 13",
-    "Data Structures And Algorithms/Week 12"
+    "Data Structures And Algorithms/Week 14"
   ]
 }
