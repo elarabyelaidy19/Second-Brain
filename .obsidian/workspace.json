@@ -11,8 +11,12 @@
             "id": "92dd796d8c287a5c",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Programming Languages/Memory Management.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Programming Languages/Memory Management.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Programming Languages/Memory Management.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Programming Languages/Memory Management.md"
+              }
             }
           }
         ],
@@ -141,9 +149,11 @@
   },
   "active": "92dd796d8c287a5c",
   "lastOpenFiles": [
+    "TIL/2023-12-05.md",
+    "TIL",
     "Programming Languages/Talking Objects.md",
-    "Memory Management.md",
-    "Ruby.md",
+    "Programming Languages/Memory Management.md",
+    "Programming Languages/Ruby.md",
     "Programming Languages/Concurrencey.md",
     "Tools/AWS.md",
     "Tools/GIT.md",
@@ -180,12 +190,10 @@
     "Data Structures And Algorithms/Week 13/Sorting and Data Structures Conclusion.md",
     "Data Structures And Algorithms/Week 13/Radix Sorts.md",
     "Data Structures And Algorithms/Week 13",
-    "Data Structures And Algorithms/Week 12/Sorting and Algorithmic Bounds.md",
     "Data Structures And Algorithms/Week 12",
     "Data Structures And Algorithms/Week 11",
     "Data Structures And Algorithms/Week 10",
     "Data Structures And Algorithms/Week 09",
-    "Data Structures And Algorithms/Week 08",
-    "Data Structures And Algorithms/image"
+    "Data Structures And Algorithms/Week 08"
   ]
 }
