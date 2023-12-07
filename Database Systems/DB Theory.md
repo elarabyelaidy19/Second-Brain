@@ -565,15 +565,15 @@ CREATE INDEX employess_name on employees(name);
     
 ## Index scan vs Index only scan 
 - Create index create B+ Tree index 
-- **index scan** mean you used the index to find the predicate and go to the heap to featch the page that contain this value. 
+- **index scan** mean you used the index to find the predicate and go to the heap to fetch the page that contain this value. 
 - **index only scan** use the value that reside in the index itself without going to the disk.
 
-## key Vs Non key column indexs
+## key Vs Non key column indexes
 - key is what we search, the non key it what we fetch from the index it's included in the index. 
 - take care of the index size. the more the size of index the more of pages you search. 
 - if you select two columns and they are indexed the one on the predicate that will be used to fetch the other from disk. 
 - you should create indexes based on your queries. 
-- the larger your table the better your non-key indeices.
+- the larger your table the better your non-key indices.
 ```sql 
 -- we pull all the name column in the index so it have'nt goes to the disk.
 create index id_idx on grades(id) include (name);
@@ -582,7 +582,7 @@ create index id_idx on grades(id) include (name);
 
 
 ## Composite Index 
-- use multicolumn index if you quey on multicolumns condition
+- use multicolumn index if you query on multicolumn condition
 
 ## How database decides to uses indexes
 - it use table statistics to decides
