@@ -71,8 +71,12 @@
             "id": "e254b27ea6cf150f",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Design Patterns.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ],
@@ -142,6 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Design Patterns.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -158,6 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Design Patterns.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -179,7 +185,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Design Patterns.md"
+              }
             }
           }
         ],
@@ -202,6 +210,8 @@
   },
   "active": "e254b27ea6cf150f",
   "lastOpenFiles": [
+    "WEB/API's.md",
+    "WEB/HTTP.md",
     "Programming Languages/Talking Objects.md",
     "Design Patterns.md",
     "Security/Security.md",
@@ -210,8 +220,6 @@
     "Tools/GIT.md",
     "Tools/img/git1.png",
     "Tools/img",
-    "WEB/API's.md",
-    "WEB/HTTP.md",
     "WEB",
     "Formatting.md",
     "Data Structures And Algorithms/notes.md",

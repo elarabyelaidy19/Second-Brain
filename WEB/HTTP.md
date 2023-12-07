@@ -302,3 +302,6 @@ path=/stuff
 
 
 
+# What Happens when typing google.com  
+
+[What Happens When](https://github.com/alex/what-happens-when) 
