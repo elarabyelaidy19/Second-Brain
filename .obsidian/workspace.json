@@ -71,12 +71,8 @@
             "id": "e254b27ea6cf150f",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Design Patterns.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "graph",
+              "state": {}
             }
           }
         ],
@@ -146,7 +142,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Design Patterns.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -163,7 +158,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Design Patterns.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -185,9 +179,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Design Patterns.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -210,10 +202,14 @@
   },
   "active": "e254b27ea6cf150f",
   "lastOpenFiles": [
+    "OBJECTS/behavioral Design Patterns.md",
+    "OBJECTS",
+    "OBJECTS/Structural Design Patterns.md",
+    "OBJECTS/Design Patterns.md",
+    "OBJECTS/Creational Design Patterns.md",
     "WEB/API's.md",
     "WEB/HTTP.md",
-    "Programming Languages/Talking Objects.md",
-    "Design Patterns.md",
+    "OBJECTS/Talking Objects.md",
     "Security/Security.md",
     "Security/OAuth.md",
     "Security",
@@ -245,16 +241,11 @@
     "System Engineering/assets",
     "Programming Languages/Memory Management.md",
     "Memory.md",
-    "Programming Languages/Object Oreinted Design.md",
+    "OBJECTS/Object Oreinted Design.md",
     "TIL/2023-12-05.md",
-    "TIL",
     "Ruby/Ruby.md",
     "Programming Languages/Concurrencey.md",
     "Tools/AWS.md",
-    "Tools/Docker.md",
-    "Programming Languages/Incapsulation.md",
-    "Database Systems/DB Theory.md",
-    "Data Structures And Algorithms/Theory.md",
-    "Data Structures And Algorithms/sql-notes.md"
+    "Tools/Docker.md"
   ]
 }
