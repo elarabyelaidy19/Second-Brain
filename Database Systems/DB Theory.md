@@ -334,14 +334,14 @@ data set.
     - **Value**: record data stored in the index file. 
     - **Reference**: index contains key and record id<PID, RId>. 
     - **List of Reference**: Key and a list of matching records ids. 
-- indexing by reference required to support multible indexes per table.
+- indexing by reference required to support multiples indexes per table.
 
 
 ## Clustered and Non-Clustered Indexes
 * ### Clustered Indexes 
-    - sort the haep file, leave some space on each block for future inserts. 
+    - sort the heap file, leave some space on each block for future inserts. 
     - index entries direct search to data entries.
-    - gives fairly sequential access to data in the haep file. 
+    - gives fairly sequential access to data in the heap file. 
     - **faster for rang queries.** 
     ![](./img/db19.png)
     - **Order of data records is “close to”, but not identical to, the sort order.** 
