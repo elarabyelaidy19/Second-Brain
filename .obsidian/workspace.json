@@ -35,8 +35,12 @@
             "id": "dc428a9a9c623d11",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "tyr.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ],
@@ -106,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Security/Security.md",
+                "file": "tyr.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -123,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Security/Security.md",
+                "file": "tyr.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Security/Security.md"
+                "file": "tyr.md"
               }
             }
           },
@@ -187,6 +191,9 @@
   },
   "active": "dc428a9a9c623d11",
   "lastOpenFiles": [
+    "README.md",
+    "Plan.md",
+    "Pasted Image 20231207194804_842.png",
     "OBJECTS/Incapsulation.md",
     "Object Oriented Programming.md",
     "Database Systems/DB Theory.md",
@@ -197,13 +204,10 @@
     "System Engineering/Operating Systems Fundamentals.md",
     "System Engineering/Computer Networking Fundamentals.md",
     "Excalidraw/Drawing 2023-12-07 19.44.47.excalidraw.md",
-    "Plan.md",
-    "Pasted Image 20231207194804_842.png",
     "Excalidraw",
     "OBJECTS/Inheritance.md",
     "OBJECTS/Talking Objects.md",
     "OBJECTS/Object Oriented Design.md",
-    "README.md",
     "Personal Growth/Growing Every Day.md",
     "Personal Growth",
     "OBJECTS/behavioral Design Patterns.md",
@@ -230,7 +234,6 @@
     "System Engineering/Img/riphop.png",
     "System Engineering/Img/network_of_networks.png",
     "System Engineering/Img",
-    "Rails/Database.md",
     "Rails",
     "Ruby"
   ]
