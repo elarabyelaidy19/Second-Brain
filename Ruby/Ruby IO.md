@@ -106,6 +106,10 @@ dir_name = 'notes'
 Dir.mkdir(dirname) unless File.exists?(dir_name) 
 File.open("#{dir_name}/new_note.md", 'w') { |f| f.puts "hello world" }
 ```
+
+## Dir 
+
+
 ## StringIO 
 ## SocketIO  
 
