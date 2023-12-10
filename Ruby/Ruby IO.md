@@ -144,11 +144,27 @@ Dir.glob('./**/*').length # count files in current and subdir
 
 # Find the top 10 largest files in a dir 
 Dir.glob('./**/*').sort_by { |f| File.size(f) }.reverse.take(10). each do |fname| 
-	puts "#{fname}\t#{File.size(fname)}
+	puts "#{fname}\t#{File.size(fname)}"
 end  
 
+# Statistics about files 
+hash = Dir.glob('./**/*').inject({}) do |hsh, fname| 
+	file_ext = File.extname(fname).downcase[1..-1] # extract the extinsion name 
+	hsh[file_ext] ||= [0, 0] # for each file extension create [count, size] if not exists 
+	hsh[file_ext][0] += 1  # increase count by one 
+	hsh[file_ext][1] = File.size(fname)  
+	hsh
+end 
 
+# wriet stat to file 
 
+File.open('file_stats.txt', 'w') do |f| 
+	hahs.each do |ext, (count, total_szie)| 
+		line = "#{ext}\t#{count}\t#{total_size}" 
+		f.puts line 
+		pust line 
+	end
+end 
 
 
 ```
