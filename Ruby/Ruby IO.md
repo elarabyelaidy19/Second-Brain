@@ -140,8 +140,7 @@ Dir.mkdir('/notes') unless Dir.exists?(/notes)
 
 # Count files in dir and subdirs 
 Dir.glob('/mnt/c/books/Engineering/**/*').length
-
-
+Dir.glob('./**/*').length # count files in current and subdir
 
 ```
 ## StringIO 
