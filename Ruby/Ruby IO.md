@@ -54,12 +54,19 @@ end
 
 ```
 
-### Reading form a file 
-
-
+### Reading from a file 
 ```ruby 
+file = File.open('file.txt', 'r') # open the file in read mode 
+content = file.read # load the entire file content, when reading again on the same it will starts from where the previous read ends 
+puts content 
+content = file.read 
+puts content # will out "" 
 ```
 
+### Reading Lines 
+```ruby 
+
+```
 
 ## StringIO 
 ## SocketIO  
