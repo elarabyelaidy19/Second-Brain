@@ -144,7 +144,7 @@ Dir.glob('./**/*').length # count files in current and subdir
 
 # Find the top 10 largest files in a dir 
 Dir.glob('./**/*').sort_by { |f| File.size(f) }.reverse.take(10). each do |fname| 
-	puts "#{fname}\t#{File.size(fname)}"
+	puts "#{fname}\t#{File.size(fname)}
 end 
 ```
 ## StringIO 
