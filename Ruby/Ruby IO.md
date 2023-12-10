@@ -171,6 +171,11 @@ File.open('file_stats.txt', 'w') do |f|
 end 
 ```
 
+
+##### Exercise: Read a text file and create a Google Chart
+[Exercie](http://ruby.bastardsbook.com/chapters/io/#:~:text=Exercise%3A%20Read%20a%20text%20file%20and%20create%20a%20Google%20Chart)
+
+
 ## StringIO 
 ## SocketIO  
 
