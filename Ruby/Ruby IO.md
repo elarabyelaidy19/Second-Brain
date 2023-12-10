@@ -28,3 +28,14 @@ stream.close # after you finish you should close stream to release system resour
 ```
 
 
+IO class in ruby is the parent of all IO classes 
+## FileIO
+
+The File class supplies the basics methods of manipulate files. 
+
+
+
+## StringIO 
+## SocketIO  
+
+
