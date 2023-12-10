@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Ruby/Ruby IO.md",
+                "file": "System Engineering/Mantras.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ruby/Ruby IO.md",
+                "file": "System Engineering/Mantras.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Ruby/Ruby IO.md",
+                "file": "System Engineering/Mantras.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Ruby/Ruby IO.md"
+                "file": "System Engineering/Mantras.md"
               }
             }
           },
@@ -166,8 +166,10 @@
   },
   "active": "41513d46fb5f4fdb",
   "lastOpenFiles": [
-    "Ruby/Ruby Index.md",
+    "Untitled.md",
+    "System Engineering/Mantras.md",
     "Ruby/Ruby IO.md",
+    "Ruby/Ruby Index.md",
     "Ruby/Ruby.md",
     "Excalidraw/Drawing 2023-12-09 23.07.40.excalidraw.md",
     "Excalidraw/Drawing 2023-12-07 19.44.47.excalidraw.md",
@@ -196,8 +198,6 @@
     "WEB/HTTP.md",
     "WEB/API's.md",
     "Excalidraw",
-    "OBJECTS/Inheritance.md",
-    "Personal Growth/Growing Every Day.md",
     "Personal Growth",
     "OBJECTS",
     "Security",
