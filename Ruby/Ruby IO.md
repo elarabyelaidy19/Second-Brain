@@ -33,6 +33,13 @@ IO class in ruby is the parent of all IO classes
 
 The File class supplies the basics methods of manipulate files. 
 
+```ruby 
+fname = "file.txt" # create file
+somefile = File.open(fname, 'w') # open the file with write mode, using w on an existing file will erase the content, to append on the file, use "a" as the second arg
+somefile.puts("hello world")  # write to the file, you can also use write which does not include newline at the end 
+somefile.close # close the file to prevent any further operations on the file.
+
+```
 
 
 ## StringIO 
