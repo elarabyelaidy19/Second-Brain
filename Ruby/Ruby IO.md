@@ -64,7 +64,12 @@ puts content # will out ""
 ```
 
 ### Reading Lines 
+#### readlines Vs readline  
+- readlines: draw all the content of the file parse it as an array, splitted by line break 
+- readline: read singular line at a time, each read ops move the file handle forward in the file. if keep calling readline hit end of file, you will get and `end of file error` 
+- using readline is more efficient because you will not load the entire file into memory at once. 
 ```ruby 
+
 
 ```
 
