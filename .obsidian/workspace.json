@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "System Engineering/Mantras.md",
+                "file": "Ruby/Ruby IO.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "System Engineering/Mantras.md",
+                "file": "Ruby/Ruby IO.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "System Engineering/Mantras.md",
+                "file": "Ruby/Ruby IO.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "System Engineering/Mantras.md"
+                "file": "Ruby/Ruby IO.md"
               }
             }
           },
@@ -166,8 +166,8 @@
   },
   "active": "41513d46fb5f4fdb",
   "lastOpenFiles": [
+    "System Engineering/Eurekas.md",
     "Untitled.md",
-    "System Engineering/Mantras.md",
     "Ruby/Ruby IO.md",
     "Ruby/Ruby Index.md",
     "Ruby/Ruby.md",
