@@ -15,7 +15,14 @@ the operating system provides three streams by default
 - to create IO object you need a file descriptor 
 ```ruby 
 io = IO.new(1) # creating IO object attaching it with fd 1(stdout) 
-
+io.puts "hello world"
 
 ```
+- to create IO to other streams/files you need a file descriptor first 
+```ruby 
+fd  = IO.sysopen('/dev/null', '+w') # create a fd to a stream 
+stream = IO.new(fd) # create IO object with attached fd 
+stream.puts "hello world" # write to the stdout 
+stream.close # after you finish you should close stream 
 
+```
