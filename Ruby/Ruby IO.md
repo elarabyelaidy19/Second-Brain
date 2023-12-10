@@ -42,6 +42,24 @@ somefile.close # close the file to prevent any further operations on the file.
 
 ```
 
+writing Wikipedia front page to a local file  
+```ruby 
+require 'rest-client' 
+
+wiki_url = "http://en.wikipedia.org/" 
+wiki_file = "wiki_local.html" 
+File.open(wiki_file, 'w') do |f| 
+	f.puts(RestClient.get(wiki_url))
+end 
+
+```
+
+### Reading form a file 
+
+
+```ruby 
+```
+
 
 ## StringIO 
 ## SocketIO  
