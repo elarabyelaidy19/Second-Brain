@@ -110,6 +110,40 @@ File.open("#{dir_name}/new_note.md", 'w') { |f| f.puts "hello world" }
 ## Dir 
 the `Dir` class provides a way to interact with directories in the file system. It includes methods for listing the contents of a directory, creating directories, and performing various operations related to file paths.
 
+#### Dir methods and Use cases
+```ruby  
+entries = Dir.entries('dir paths') # list all files in the specified dir 
+files = Dir.glob('/notes/*.md') # return an array of all md files in the dir 
+Dir.mkdir(dir_name, mode="permision") # create dir with specified permision 
+Dir.delete(dir_name) 
+Dir.chdir(dir_name) { } # change the current dir for the block 
+Dir.pwd # return the current working dir 
+Dir.exists?(dir_name) 
+
+# Use cases 
+# list files only in dir 
+files = Dir.entries('/home/elaraby').reject { |f| File.directory?(f) } 
+
+# iterate over files in a dir 
+Dir.foreach('/home/elaraby') do |f| 
+	puts "file name is: #{f}" 
+end 
+
+# change the current dir and list all the files in it 
+Dir.chdir('/mnt/c/books/engineering') do 
+	md_files = Dir.glob('*.md') 
+	puts "notes: #{md_files}"
+end 
+
+# create directory if it is not exists? 
+Dir.mkdir('/notes') unless Dir.exists?(/notes) 
+
+# Count files in dir and subdirs 
+Dir.glob('/mnt/c/books/Engineering/**/*').length
+
+
+
+```
 ## StringIO 
 ## SocketIO  
 
