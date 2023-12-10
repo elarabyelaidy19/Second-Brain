@@ -23,6 +23,8 @@ io.puts "hello world"
 fd  = IO.sysopen('/dev/null', '+w') # create a fd to a stream 
 stream = IO.new(fd) # create IO object with attached fd 
 stream.puts "hello world" # write to the stdout 
-stream.close # after you finish you should close stream 
+stream.close # after you finish you should close stream to release system resources 
 
 ```
+
+
