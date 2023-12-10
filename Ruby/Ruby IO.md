@@ -69,10 +69,43 @@ puts content # will out ""
 - readline: read singular line at a time, each read ops move the file handle forward in the file. if keep calling readline hit end of file, you will get and `end of file error` 
 - using readline is more efficient because you will not load the entire file into memory at once. 
 ```ruby 
+require 'open-uri'
+url = "http://ruby.bastardsbook.com/files/fundamentals/hamlet.txt"
+hamlet = "hamlet.txt"
 
+File.open(hamlet, 'w') do |f|
+    f.puts(URI.open(url).read)
+end
+
+File.open(hamlet, 'r') do |f|
+    f.readlines.each_with_index do |line, idx|
+        puts line if idx % 42 == 41
+    end
+end
 
 ```
+### Closing File 
+File write operations don't happen instantaneously, as disk access is bound by at least the laws of physics. As data queues up to be written, [it sits in a memory buffer before actually being written to the hard disk](http://en.wikipedia.org/wiki/Disk_buffer "Disk buffer - Wikipedia, the free encyclopedia").  
 
+"flush" is good practice in programming because it frees up memory for the rest of your program and (ideally) ensures that that file is available for other processes to access.  
+
+when  pass a block into `File.open`. At the end of the block, the file is automatically closed:
+
+```ruby  
+datafile = File.open("sample.txt", "r")
+lines = datafile.readlines         
+datafile.close
+lines.each{ |line| puts line }    
+```
+
+### File Existing and Properties 
+
+```ruby 
+File.exists?('filename') # check whether the file exits? or not 
+dir_name = 'notes' 
+Dir.mkdir(dirname) unless File.exists?(dir_name) 
+File.open("#{dir_name}/new_note.md", 'w') { |f| f.puts "hello world" }
+```
 ## StringIO 
 ## SocketIO  
 
