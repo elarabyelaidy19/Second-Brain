@@ -176,6 +176,8 @@ end
 [Exercie](http://ruby.bastardsbook.com/chapters/io/#:~:text=Exercise%3A%20Read%20a%20text%20file%20and%20create%20a%20Google%20Chart)
 
 
+
+
 ## StringIO 
 ## SocketIO  
 

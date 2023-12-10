@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "3356ed400cdf341c",
+        "id": "801e2a090792ff7c",
         "type": "tabs",
         "children": [
           {
-            "id": "41513d46fb5f4fdb",
+            "id": "39c200975fd0f126",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Ruby/Ruby IO.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ruby/Ruby IO.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Ruby/Ruby IO.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Ruby/Ruby IO.md"
-              }
+              "state": {}
             }
           },
           {
@@ -164,11 +156,11 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "41513d46fb5f4fdb",
+  "active": "39c200975fd0f126",
   "lastOpenFiles": [
+    "Ruby/Ruby IO.md",
     "System Engineering/Eurekas.md",
     "Untitled.md",
-    "Ruby/Ruby IO.md",
     "Ruby/Ruby Index.md",
     "Ruby/Ruby.md",
     "Excalidraw/Drawing 2023-12-09 23.07.40.excalidraw.md",
