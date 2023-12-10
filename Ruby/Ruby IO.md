@@ -12,7 +12,10 @@ the operating system provides three streams by default
 - **standard output:** writing to the terminal, write-only.
 - **standard error:**  writing to the terminal, write-only.  
 
+- to create IO object you need a file descriptor 
 ```ruby 
+io = IO.new(1) # creating IO object attaching it with fd 1(stdout) 
+
 
 ```
 
