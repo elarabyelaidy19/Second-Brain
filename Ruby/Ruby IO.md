@@ -147,6 +147,10 @@ Dir.glob('./**/*').sort_by { |f| File.size(f) }.reverse.take(10). each do |fname
 	puts "#{fname}\t#{File.size(fname)}"
 end  
 
+```
+
+#### Files Stats 
+```ruby 
 # Statistics about files 
 hash = Dir.glob('./**/*').inject({}) do |hsh, fname| 
 	file_ext = File.extname(fname).downcase[1..-1] # extract the extinsion name 
@@ -165,9 +169,8 @@ File.open('file_stats.txt', 'w') do |f|
 		pust line 
 	end
 end 
-
-
 ```
+
 ## StringIO 
 ## SocketIO  
 
