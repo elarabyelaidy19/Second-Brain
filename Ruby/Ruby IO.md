@@ -108,7 +108,7 @@ File.open("#{dir_name}/new_note.md", 'w') { |f| f.puts "hello world" }
 ```
 
 ## Dir 
-
+the `Dir` class provides a way to interact with directories in the file system. It includes methods for listing the contents of a directory, creating directories, and performing various operations related to file paths.
 
 ## StringIO 
 ## SocketIO  
