@@ -1,4 +1,10 @@
-#### [Ruby IO](https://thoughtbot.com/blog/io-in-ruby)  
+
+## Resources 
+
+#### [Ruby IO From thoughtbot](https://thoughtbot.com/blog/io-in-ruby)   
+#### [File IO The Bastards Book of Ruby](http://ruby.bastardsbook.com/chapters/io/) 
+
+
 
 ## IO 
 
