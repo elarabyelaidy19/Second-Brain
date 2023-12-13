@@ -71,12 +71,17 @@ Need to return [], [1], or [1,2]. Always an array.
 Get last element:  A[-1] or A.last
 
 #### Construction:
+```ruby
+Array.new(initial size, default object) (default object is the same object referenced)
 
-## Array.new(initial size, default object) (default object is the same object referenced)
+```
 
 ## Create an array with separate objects: a block can be passed instead
-## Multi-dimensional: Array.new(3) {Array.new(3)}
-## If you don't od this, then you will have the same value for all the elements of the array
+## Multi-dimensional:  
+```ruby
+Array.new(3) {Array.new(3)}
+```
+## If you don't do this, then you will have the same value for all the elements of the array
 
 #### Accessing
 ```ruby
@@ -112,45 +117,56 @@ Get last element:  A[-1] or A.last
 #### Removing
 
 [What is the easiest way to remove the first element from an array?](http://stackoverflow.com/questions/3615700/ruby-what-is-the-easiest-way-to-remove-the-first-element-from-an-array)
+```ruby
+head, *tail = [1, 2, 3, 4, 5]
+#==> head = 1, tail = [2, 3, 4, 5]
 
-    head, *tail = [1, 2, 3, 4, 5]
-    #==> head = 1, tail = [2, 3, 4, 5]
+arr.pop => remove last element and returns it
+arr.shift => retrieve and remove the first item
+arr.delete_at(index) => deletes
+arr.delete(delete somewhere)
+[1,2,3,4,5,6,7,8,9].delete_if{|i| i % 2 == 0}         # delete if
+arr.compact and arr.compact! => removes ni value
+arr.uniq and arr.uniq! => removes duplicates
 
-    arr.pop => remove last element and returns it
-    arr.shift => retrieve and remove the first item
-    arr.delete_at(index) => deletes
-    arr.delete(delete somewhere)
-    [1,2,3,4,5,6,7,8,9].delete_if{|i| i % 2 == 0}         # delete if
-    arr.compact and arr.compact! => removes ni value
-    arr.uniq and arr.uniq! => removes duplicates
-
+```
+    
 #### Iterating
+```ruby 
+arr.each {|a|} => leaves the array unchanged
+arr.reverse_each {|a|} => reverse order
+arr.map and arr.map! => modifies array
 
-    arr.each {|a|} => leaves the array unchanged
-    arr.reverse_each {|a|} => reverse order
-    arr.map and arr.map! => modifies array
-
+```
+    
 #### Selection
+```ruby 
+arr.select {|a| a > 3}
+arr.reject {|a| a > 3}
+arr.drop_while {|a| a < 4}
+arr.delete_if
+arr.keep_if
 
-    arr.select {|a| a > 3}
-    arr.reject {|a| a > 3}
-    arr.drop_while {|a| a < 4}
-    arr.delete_if
-    arr.keep_if
-
+```
+    
 #### Updating
+```ruby 
+a = [1, 3, 5, 7, 9]
+a[2, 2] = 'cat' -> [1, 3, "cat", 9] #The 2 elements at the 2 position become 'cat'
+a[2, 0] = 'dog' -> [1, 3, "dog", "cat", 9] #Since 0, replace 2 position with 'dog'
+a[1, 1] = [9, 8, 7] -> [1, 9, 8, 7, "dog", "cat", 9] #Replace 1 position (length 1) with the array
+a[0..3] = [] -> ["dog", "cat" 9] #Clear from 0 to 3 (inclusive)
+a[5..6] = 99, 98 -> ["dog", "cat", 9, nil, nil, 99, 98] #Pad with null if elements in begin don't exist yet
 
-    a = [1, 3, 5, 7, 9]
-    a[2, 2] = 'cat' -> [1, 3, "cat", 9] #The 2 elements at the 2 position become 'cat'
-    a[2, 0] = 'dog' -> [1, 3, "dog", "cat", 9] #Since 0, replace 2 position with 'dog'
-    a[1, 1] = [9, 8, 7] -> [1, 9, 8, 7, "dog", "cat", 9] #Replace 1 position (length 1) with the array
-    a[0..3] = [] -> ["dog", "cat" 9] #Clear from 0 to 3 (inclusive)
-    a[5..6] = 99, 98 -> ["dog", "cat", 9, nil, nil, 99, 98] #Pad with null if elements in begin don't exist yet
-
+```
+    
 #### Destructive
-    arr.select! {|a| a > 3}
-    arr.reject!
+```ruby
+arr.select! {|a| a > 3}
+arr.reject!
 
+```
+	
 #### Public instance methods
     ary & other_ary => combines the elements common to the two arrays, excluding duplicates
 
