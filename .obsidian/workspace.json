@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "801e2a090792ff7c",
+        "id": "4bf74ea312c66781",
         "type": "tabs",
         "children": [
           {
-            "id": "39c200975fd0f126",
+            "id": "25b14d2ec3c634c7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Ruby/Ruby IO.md",
+                "file": "Ruby/Standard Library.md",
                 "mode": "source",
                 "source": false
               }
@@ -38,7 +38,7 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "byModifiedTime"
               }
             }
           },
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ruby/Ruby IO.md",
+                "file": "Ruby/Standard Library.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Ruby/Ruby IO.md",
+                "file": "Ruby/Standard Library.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Ruby/Ruby IO.md"
+                "file": "Ruby/Standard Library.md"
               }
             }
           },
@@ -150,7 +150,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -164,13 +165,21 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "39c200975fd0f126",
+  "active": "25b14d2ec3c634c7",
   "lastOpenFiles": [
-    "Ruby/Ruby IO.md",
     "System Engineering/Eurekas.md",
-    "Untitled.md",
-    "Ruby/Ruby Index.md",
+    "System Engineering/Linux.md",
+    "Ruby/Standard Library.md",
+    "Zlib.md",
     "Ruby/Ruby.md",
+    "Untitled.md",
+    "Ruby/Ruby IO.md",
+    "2023-12-13.md",
+    "2023-12-12.md",
+    "Formatting.md",
+    "Untitled",
+    "Ruby/Ruby Index.md",
+    "tracked_files.json",
     "Excalidraw/Drawing 2023-12-09 23.07.40.excalidraw.md",
     "Excalidraw/Drawing 2023-12-07 19.44.47.excalidraw.md",
     "Security/Security.md",
@@ -180,7 +189,6 @@
     "System Engineering/Img/csmacdDIA.png",
     "System Engineering/Computer Networking Fundamentals.md",
     "System Engineering/Operating Systems Fundamentals.md",
-    "System Engineering/Linux.md",
     "OBJECTS/Incapsulation.md",
     "Object Oriented Programming.md",
     "OBJECTS/Talking Objects.md",
@@ -188,15 +196,10 @@
     "OBJECTS/Design Patterns.md",
     "OBJECTS/Creational Design Patterns.md",
     "OBJECTS/Object Oriented Design.md",
-    "Formatting.md",
     "Plan.md",
     "[difference.md",
     "README.md",
-    "tyr.md",
     "Pasted Image 20231207194804_842.png",
-    "Database Systems/DB Theory.md",
-    "WEB/HTTP.md",
-    "WEB/API's.md",
     "Excalidraw",
     "Personal Growth",
     "OBJECTS",
@@ -209,8 +212,6 @@
     "System Engineering/Img/type_of_delays.png",
     "System Engineering/Img/three-way.png",
     "System Engineering/Img/tcp-segment.png",
-    "System Engineering/Img",
-    "Rails",
-    "Ruby"
+    "System Engineering/Img"
   ]
 }

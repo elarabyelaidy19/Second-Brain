@@ -1,6 +1,8 @@
 
 ## Resources 
 
+## Review 
+
 #### [Ruby IO From thoughtbot](https://thoughtbot.com/blog/io-in-ruby)   
 #### [File IO The Bastards Book of Ruby](http://ruby.bastardsbook.com/chapters/io/) 
 
@@ -39,7 +41,9 @@ IO class in ruby is the parent of all IO classes
 
 The File class supplies the basics methods of manipulate files. 
 
-```ruby 
+```ruby  
+file1 = File.new('note.md') # create file and open it for read 
+
 fname = "file.txt" # create file
 somefile = File.open(fname, 'w') # open the file with write mode, using w on an existing file will erase the content, to append on the file, use "a" as the second arg
 somefile = File.open(fname, 'a') # append to the existing file
@@ -67,11 +71,26 @@ content = file.read # load the entire file content, when reading again on the sa
 puts content 
 content = file.read 
 puts content # will out "" 
+f1 = File.open('note.md', 'r+') # read/write mode starts at the beginig of the file 
+f1 = File.open('note.md', 'w+') # truncate file if it exists or create a new one 
+f1 = File.open('note.md', 'a+') # append open file W/R start at the end of the file
+
+# Locate bytes by position 
+f1 = File.open('notes.md') 
+f1.seek(5) # return the first 5 character starts from 0 the beging of the file
+str = f1.gets
+
+f1.seek(30) 
+pos = f1.pos  # 30 
+f1.seek(20, IO::SEEK_CUR) # seek 20 charcter from the pos of the file 30 
+pos2 = f1.pos # 30 + 20 
+
+f1.rewind # rest the file pointer at the begining 
 ```
 
 ### Reading Lines 
 #### readlines Vs readline  
-- readlines: draw all the content of the file parse it as an array, splitted by line break 
+- readlines: draw all the content of the file parse it as an array, splited by line break 
 - readline: read singular line at a time, each read ops move the file handle forward in the file. if keep calling readline hit end of file, you will get and `end of file error` 
 - using readline is more efficient because you will not load the entire file into memory at once. 
 ```ruby 
@@ -183,8 +202,8 @@ end
 
 
 
+## FileUtils 
 
-## StringIO 
-## SocketIO  
-
+## StringIO  
+## SocketIO   
 
