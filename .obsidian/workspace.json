@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Security/Authentication.md",
+                "file": "Ruby/Ruby IO.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Security/Authentication.md",
+                "file": "Ruby/Ruby IO.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Security/Authentication.md",
+                "file": "Ruby/Ruby IO.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Security/Authentication.md"
+                "file": "Ruby/Ruby IO.md"
               }
             }
           },
@@ -180,11 +180,16 @@
   },
   "active": "549230d47d597ecb",
   "lastOpenFiles": [
-    "System Engineering/Operating Systems Fundamentals.md",
+    "Programming Languages/Memory Management.md",
+    "README.md",
+    "Formatting.md",
+    "Plan.md",
     "Security/Authentication.md",
+    "Untitled.md",
+    "Pasted image 20231213213228.png",
+    "System Engineering/Operating Systems Fundamentals.md",
     "assets/seesionv.md",
     "assets",
-    "Pasted image 20231213213228.png",
     "Security/Security.md",
     "Security/assets/sessionsvscokies.png",
     "Ruby/Ruby Index.md",
@@ -194,11 +199,9 @@
     "System Engineering/Linux.md",
     "Zlib.md",
     "Ruby/Ruby.md",
-    "Untitled.md",
     "Ruby/Ruby IO.md",
     "2023-12-13.md",
     "2023-12-12.md",
-    "Formatting.md",
     "Untitled",
     "tracked_files.json",
     "Excalidraw/Drawing 2023-12-09 23.07.40.excalidraw.md",
@@ -213,9 +216,6 @@
     "OBJECTS/Talking Objects.md",
     "OBJECTS/Structural Design Patterns.md",
     "OBJECTS/Design Patterns.md",
-    "OBJECTS/Creational Design Patterns.md",
-    "OBJECTS/Object Oriented Design.md",
-    "Plan.md",
     "Pasted Image 20231207194804_842.png",
     "Excalidraw",
     "Personal Growth",
