@@ -175,9 +175,7 @@ Unlike cookies, sessions are created and stored on the server side. There is usu
 ## What is OAuth   
 
 <b>
-
 It's an open slandered for authorization. OAuth is a standard that apps can use to provide client applications with “secure delegated access”. OAuth works over HTTPS and authorizes devices, APIs, servers, and applications with access tokens rather than credentials.
-
 </b>
 
 # Why OAuth  

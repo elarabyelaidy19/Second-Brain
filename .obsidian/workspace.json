@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Security/Authentication.md",
+                "file": "Rails/Background Jobs.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,14 +25,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Ruby/Ruby IO.md",
+                "file": "Rails/Elasticsearch.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ruby/Ruby IO.md",
+                "file": "Rails/Background Jobs.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -115,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Ruby/Ruby IO.md",
+                "file": "Rails/Background Jobs.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Ruby/Ruby IO.md"
+                "file": "Rails/Background Jobs.md"
               }
             }
           },
@@ -178,13 +177,17 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "549230d47d597ecb",
+  "active": "650edd438efdd3d4",
   "lastOpenFiles": [
+    "Security/Authentication.md",
+    "Rails/Elasticsearch.md",
+    "Rails/Background Jobs.md",
+    "Rails/Database.md",
+    "Ruby/Ruby IO.md",
     "Programming Languages/Memory Management.md",
     "README.md",
     "Formatting.md",
     "Plan.md",
-    "Security/Authentication.md",
     "Untitled.md",
     "Pasted image 20231213213228.png",
     "System Engineering/Operating Systems Fundamentals.md",
@@ -199,7 +202,6 @@
     "System Engineering/Linux.md",
     "Zlib.md",
     "Ruby/Ruby.md",
-    "Ruby/Ruby IO.md",
     "2023-12-13.md",
     "2023-12-12.md",
     "Untitled",
@@ -213,9 +215,6 @@
     "System Engineering/Computer Networking Fundamentals.md",
     "OBJECTS/Incapsulation.md",
     "Object Oriented Programming.md",
-    "OBJECTS/Talking Objects.md",
-    "OBJECTS/Structural Design Patterns.md",
-    "OBJECTS/Design Patterns.md",
     "Pasted Image 20231207194804_842.png",
     "Excalidraw",
     "Personal Growth",
