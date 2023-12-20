@@ -4,31 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "51a9a2d513641e88",
+        "id": "021e3fe911ecc054",
         "type": "tabs",
         "children": [
           {
-            "id": "650edd438efdd3d4",
+            "id": "66af4375d2d6d8d9",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Rails/Background Jobs.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "549230d47d597ecb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Rails/Elasticsearch.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -97,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Rails/Background Jobs.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -114,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Rails/Background Jobs.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Rails/Background Jobs.md"
-              }
+              "state": {}
             }
           },
           {
@@ -177,18 +157,26 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "650edd438efdd3d4",
+  "active": "66af4375d2d6d8d9",
   "lastOpenFiles": [
-    "Security/Authentication.md",
-    "Rails/Elasticsearch.md",
-    "Rails/Background Jobs.md",
-    "Rails/Database.md",
-    "Ruby/Ruby IO.md",
+    "Excalidraw/Drawing 2023-12-18 19.20.24.excalidraw.md",
+    "Ruby/assets/Memory.md",
+    "Ruby/assets/heap.png",
+    "Ruby/Memory Management.md",
     "Programming Languages/Memory Management.md",
+    "Books/Agile Rails.md",
+    "Books.md",
+    "Books/the well grounded rubyiest.md",
+    "Books",
+    "[Blog.md",
+    "Rails/Elasticsearch.md",
+    "Ruby/assets",
+    "Rails/Database.md",
+    "Rails/Background Jobs.md",
+    "Security/Authentication.md",
+    "Ruby/Ruby IO.md",
     "README.md",
     "Formatting.md",
-    "Plan.md",
-    "Untitled.md",
     "Pasted image 20231213213228.png",
     "System Engineering/Operating Systems Fundamentals.md",
     "assets/seesionv.md",
@@ -203,18 +191,11 @@
     "Zlib.md",
     "Ruby/Ruby.md",
     "2023-12-13.md",
-    "2023-12-12.md",
-    "Untitled",
     "tracked_files.json",
-    "Excalidraw/Drawing 2023-12-09 23.07.40.excalidraw.md",
-    "Excalidraw/Drawing 2023-12-07 19.44.47.excalidraw.md",
     "System Engineering/assets/AI_UCB_2.png",
     "System Engineering/Img/app_tras.png",
     "System Engineering/Img/csmaDIA.png",
     "System Engineering/Img/csmacdDIA.png",
-    "System Engineering/Computer Networking Fundamentals.md",
-    "OBJECTS/Incapsulation.md",
-    "Object Oriented Programming.md",
     "Pasted Image 20231207194804_842.png",
     "Excalidraw",
     "Personal Growth",
@@ -222,8 +203,6 @@
     "Security",
     "Tools/img/git1.png",
     "Tools/img",
-    "WEB",
-    "System Engineering/Img/udp_segment.png",
-    "System Engineering/Img/type_of_delays.png"
+    "System Engineering/Img/udp_segment.png"
   ]
 }
