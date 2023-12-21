@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "021e3fe911ecc054",
+        "id": "a2aa19b7365fff6f",
         "type": "tabs",
         "children": [
           {
-            "id": "66af4375d2d6d8d9",
+            "id": "5e55b389cdbe4370",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Ruby/Memory Management.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Ruby/Memory Management.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Ruby/Memory Management.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Ruby/Memory Management.md"
+              }
             }
           },
           {
@@ -157,18 +165,20 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "66af4375d2d6d8d9",
+  "active": "5e55b389cdbe4370",
   "lastOpenFiles": [
+    "[Blog.md",
+    "Ruby/Memory Management.md",
+    "Ruby/assets/GC.png",
+    "Ruby/Ruby.md",
     "Excalidraw/Drawing 2023-12-18 19.20.24.excalidraw.md",
     "Ruby/assets/Memory.md",
     "Ruby/assets/heap.png",
-    "Ruby/Memory Management.md",
     "Programming Languages/Memory Management.md",
     "Books/Agile Rails.md",
     "Books.md",
     "Books/the well grounded rubyiest.md",
     "Books",
-    "[Blog.md",
     "Rails/Elasticsearch.md",
     "Ruby/assets",
     "Rails/Database.md",
@@ -189,7 +199,6 @@
     "System Engineering/Eurekas.md",
     "System Engineering/Linux.md",
     "Zlib.md",
-    "Ruby/Ruby.md",
     "2023-12-13.md",
     "tracked_files.json",
     "System Engineering/assets/AI_UCB_2.png",
@@ -202,7 +211,6 @@
     "OBJECTS",
     "Security",
     "Tools/img/git1.png",
-    "Tools/img",
-    "System Engineering/Img/udp_segment.png"
+    "Tools/img"
   ]
 }
