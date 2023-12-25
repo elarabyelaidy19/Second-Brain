@@ -61,14 +61,13 @@ array.detect { |each| each == element } != nil
 7. How to always get an array?
 
 Need to return [], [1], or [1,2]. Always an array.
-
-    def method
-       ...
+```ruby
+   def method
        [*products] or Array(products)
     end
+```
+ 
 
-
-Get last element:  A[-1] or A.last
 
 #### Construction:
 ```ruby
@@ -85,34 +84,34 @@ Array.new(3) {Array.new(3)}
 
 #### Accessing
 ```ruby
-    a = [1, 3, 5, 7, 9]
+a = [1, 3, 5, 7, 9]
 
-    # Ranges: Two periods = include ending
-    a[1..3] = [3, 5, 7]
-    # Three periods = don't include ending
-    a[1...3] = [3, 5]
+# Ranges: Two periods = include ending
+a[1..3] = [3, 5, 7]
+# Three periods = don't include ending
+a[1...3] = [3, 5]
 
-    arr[2], arr[2, 4], arr[-9, 3], arr[1..4]
-    arr.at(0) #this won't raise an error
+arr[2], arr[2, 4], arr[-9, 3], arr[1..4]
+arr.at(0) #this won't raise an error
 
-    arr.fetch(100) => raises an error if out of bounds
-    arr.first, arr.last
+arr.fetch(100) => raises an error if out of bounds
+arr.first, arr.last
 
-    arr.take(3) => returns the first n elements
-    arr.drop(3) => gets all ofthe elements after n elements have been dropped
+arr.take(3) => returns the first n elements
+arr.drop(3) => gets all ofthe elements after n elements have been dropped
 
 #### Obtaining Information
 
-    arr.length, count, size = same thing
-    arr.empty? => check if empty
-    arr.include?('konqueror') => check if item is included
+arr.length, count, size = same thing
+arr.empty? => check if empty
+arr.include?('konqueror') => check if item is included
 
 #### Adding
 
-    arr << 5
-    arr.push(5), arr << 5 => add to end
-    arr.unshift(0) => add to any position
-    arr.insert (3, 'apple') => add at position 3
+arr << 5
+arr.push(5), arr << 5 => add to end
+arr.unshift(0) => add to any position
+arr.insert (3, 'apple') => add at position 3
 ```
 #### Removing
 
@@ -146,6 +145,17 @@ arr.reject {|a| a > 3}
 arr.drop_while {|a| a < 4}
 arr.delete_if
 arr.keep_if
+array.include?(element) # preferred method
+array.member?(element)
+array.to_set.include?(element)
+array.to_set.member?(element)
+array.index(element) > 0
+array.find_index(element) > 0
+array.index { |each| each == element } > 0
+array.find_index { |each| each == element } > 0
+array.any? { |each| each == element }
+array.find { |each| each == element } != nil
+array.detect { |each| each == element } != nil
 
 ```
     
@@ -168,435 +178,99 @@ arr.reject!
 ```
 	
 #### Public instance methods
-    ary & other_ary => combines the elements common to the two arrays, excluding duplicates
+```ruby 
+ary & other_ary => # combines the elements common to the two arrays, excluding duplicates
 
-    ary * int => triples the array size and fills
-    [1, 2, 3] * 3 => [1, 2, 3, 1, 2, 3, 1, 2, 3]
+ary * int => # triples the array size and fills
+[1, 2, 3] * 3 => [1, 2, 3, 1, 2, 3, 1, 2, 3]
 
-    ary * str => "join"
-    [1, 2, 3] * ',' => "1,2,3"
+ary * str => "join"
+[1, 2, 3] * ',' => "1,2,3"
 
-    ary + other_ary => concatenates the arrays
-    ary - other_ary => subtracts the arrays
+ary + other_ary => # concatenates the arrays
+ary - other_ary => # subtracts the arrays
 
-    arry << obj -> push to end of array, returns the array itself to several appends may be chained together
+arry << obj -> # push to end of array, returns the array itself to several appends may be chained together
 
 
-# File: attr_reader_writer_accessor.md
+``` 
+
 
 # What is `attr_accessor` in Ruby?
 [link](http://stackoverflow.com/questions/4370960/what-is-attr-accessor-in-ruby)
+```ruby 
+class Person
+  def greet
+	@name
+  end
+end
 
-    class Person
-      def greet
-        @name
-      end
-    end
-
+```
+    
 `attr_reader` means you can get the `name` variable inside. Right now we cannot do `person = Person.new; person.name` since there is no access. But with the reader,
+```ruby 
 
-    class Person
-      attr_reader :name
+class Person
+  attr_reader :name
 
-      def greet
-        @name
-      end
-    end
+  def greet
+	@name
+  end
+end
+
+```
 
 We can do `person.name` (no errors), but we cannot edit what is inside the `name` since it doesn't have the `attr_writer` yet. So we do this:
+```ruby 
 
-    class Person
-      attr_writer :name
+class Person
+  attr_writer :name
 
-      def greet
-        @name
-      end
-    end
+  def greet
+	@name
+  end
+end
 
+```
 Now we can set `person.name = "yolo"` and have `person.greet` return "yolo". However we cannot do `person.name` since we don't have the `attr_reader`. To be able to do things, you should include both:
 
-    attr_writer :name
-    attr_reader :name
-
+```ruby 
+attr_writer :name
+attr_reader :name
+```
+    
 Or you could just do:
 
-    attr_accessor :name
+`attr_accessor :name`
 
 Why? Ruby, like Smalltalk, does not allow instance variables to be accessed outside of methods for that object (by default). Instance variables cannot be accessed in the `x.y` form, in Ruby `y` is always taken as a message to send. Thus the `attr_*` methods create wrappers which proxy the instance `@variable access through dynamically created methods.`
 
 `attr_accessor` is just a method, what it does is create more methods for you. These are equivalent:
 
-    class Foo
-      attr_accessor :bar
-    end
+```ruby 
+class Foo
+  attr_accessor :bar
+end
 
-    class Foo
-      def bar
-        @bar
-      end
+class Foo
+  def bar
+	@bar
+  end
 
-      def bar=(new_value)
-        @bar = new_value
-      end
-    end
-
-
-
-# File: classes-and-methods.md
-
-## RubyMonk
-
-	x.class, 1.class, "".class
-	x.is_a?("Integer")
-	x.is_a?("String")
-	1.class.class 				# Class
-
-For a class to justify its existence, it needs to have two distinct features:
-
-1. State: It defines the attributes of its instances.
-2. Behavior: It must do something meaningful.
-
-Example:
-
-		class Rectangle
-		  def initialize(length, breadth)
-		    @length = length
-		    @breadth = breadth
-		  end
-
-		  def perimeter
-		    2 * (@length + @breadth)
-		  end
-		  
-		  def area
-		    @length * @breadth
-		  end
-
-		  #write the 'area' method here
-		end
-
-#### Methods
-
-Methods are also objects. 
-
-	1.method("next") #<Method: Fixnum(Integer)#next>
-
-Even a method that does nothing at all and has no return produces an object - `nil`.
-
-`Return` returns `nil` if no object is specified.
-
-Splat: Used to handle methods which has a variable parameter list.
-
-	def add(*numbers)
-	  numbers.inject(0) { |sum, number| sum + number }
-	end
-
-	def add_with_message(message, *numbers)
-	  "#{message} : #{add(*numbers)}"
-	end
-
-	puts add_with_message("The Sum is", 1, 2, 3)
-
-3rd parameter hash example
-
-	def add(a_number, another_number, options = {})
-	  sum = a_number + another_number
-	  sum = sum.abs if options[:absolute]
-	  sum = sum.round(options[:precision]) if options[:round]
-	  sum
-	end
-
-	puts add(1.0134, -5.568)
-	puts add(1.0134, -5.568, absolute: true)
-	puts add(1.0134, -5.568, absolute: true, round: true, precision: 2)
-
-Injects and shit
-
-	def add(*numbers)
-		numbers.inject(0) { |sum, number| sum + number }  
-	end
-
-	def subtract(*numbers)
-	  sum = numbers.shift
-	  numbers.inject(sum) { |sum, number| sum - number }  
-	end
-
-	def calculate(*arguments)
-	  # if the last argument is a Hash, extract it 
-	  # otherwise create an empty Hash
-	  options = arguments[-1].is_a?(Hash) ? arguments.pop : {}
-	  options[:add] = true if options.empty?
-	  return add(*arguments) if options[:add]
-	  return subtract(*arguments) if options[:subtract]
-	end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# File: combined_doc.md
-
-# File: arrays-and-sets.md
-
-# Check if a value exists in an array in Ruby
-[Reference](https://stackoverflow.com/questions/1986386/check-if-a-value-exists-in-an-array-in-ruby)
-
-- You can use `*` to check array membership in a `case` expression.
-
-``` ruby
-case element
-when *array
-  ...
-else
-  ...
+  def bar=(new_value)
+	@bar = new_value
+  end
 end
 ```
-
-- Use `Set` when calling it an `include?` on an equivalent Array.
-- There is an `in?` method in `ActiveSuport`.
-- The methods to find elements in an array:
-
-``` ruby
-array.include?(element) # preferred method
-array.member?(element)
-array.to_set.include?(element)
-array.to_set.member?(element)
-array.index(element) > 0
-array.find_index(element) > 0
-array.index { |each| each == element } > 0
-array.find_index { |each| each == element } > 0
-array.any? { |each| each == element }
-array.find { |each| each == element } != nil
-array.detect { |each| each == element } != nil
-```
-
-# Advantages of Set in Ruby
-[Reference](https://stackoverflow.com/questions/36548938/advantages-of-set-in-ruby)
-
-- When doing an `include?`, Set and Hash is way more efficient than Array.
-- Set also has things like `superset?`, `intersect?`, `subset?`.
-- Arrays:
-  - Can have duplicated elements
-  - Maintains order
-  - Can be iterated over in order
-  - Searching for element is slower
-  - Maintaining uniqueness of elements is slow
-- Sets:
-  - Can't have duplicated elements
-  - Don't have ordering
-  - Searching for element is fast, and unique
-- ***If you want to enforce uniqueness and you don't need any ordering - sets are your best choice. When you don't really care about uniqueness and ordering is important - Array is your choice.***
-
-# 7 daily use cases of Ruby Array
-[Link](http://blog.8thcolor.com/en/2014/02/7-daily-use-cases-of-ruby-array/)
-
-1. Check if one Array has all elements of another? `array_of_imported_emails - existing_emails`.empty?
-2. Elements common to both arrays? `first_array & second_array`
-3. Merging two Arrays without duplicating entries? `first | second`
-4. Sort by a key, ex: location? `data.sort_by {|hsh| hsh[:location]}`
-5. Keep a product unique with respect to one attribute? `products.uniq &:category_id`
-6. Filter an Array with a String? `books.grep(/[Rr]ails/)`
-7. How to always get an array?
-
-Need to return [], [1], or [1,2]. Always an array.
-
-    def method
-       ...
-       [*products] or Array(products)
-    end
-
-
-Get last element:  A[-1] or A.last
-
-#### Construction:
-
-## Array.new(initial size, default object) (default object is the same object referenced)
-
-## Create an array with separate objects: a block can be passed instead
-## Multi-dimensional: Array.new(3) {Array.new(3)}
-## If you don't od this, then you will have the same value for all the elements of the array
-
-#### Accessing
-
-    a = [1, 3, 5, 7, 9]
-
-    # Ranges: Two periods = include ending
-    a[1..3] = [3, 5, 7]
-    # Three periods = don't include ending
-    a[1...3] = [3, 5]
-
-    arr[2], arr[2, 4], arr[-9, 3], arr[1..4]
-    arr.at(0) #this won't raise an error
-
-    arr.fetch(100) => raises an error if out of bounds
-    arr.first, arr.last
-
-    arr.take(3) => returns the first n elements
-    arr.drop(3) => gets all ofthe elements after n elements have been dropped
-
-#### Obtaining Information
-
-    arr.length, count, size = same thing
-    arr.empty? => check if empty
-    arr.include?('konqueror') => check if item is included
-
-#### Adding
-
-    arr << 5
-    arr.push(5), arr << 5 => add to end
-    arr.unshift(0) => add to any position
-    arr.insert (3, 'apple') => add at position 3
-
-#### Removing
-
-[What is the easiest way to remove the first element from an array?](http://stackoverflow.com/questions/3615700/ruby-what-is-the-easiest-way-to-remove-the-first-element-from-an-array)
-
-    head, *tail = [1, 2, 3, 4, 5]
-    #==> head = 1, tail = [2, 3, 4, 5]
-
-    arr.pop => remove last element and returns it
-    arr.shift => retrieve and remove the first item
-    arr.delete_at(index) => deletes
-    arr.delete(delete somewhere)
-    [1,2,3,4,5,6,7,8,9].delete_if{|i| i % 2 == 0}         # delete if
-    arr.compact and arr.compact! => removes ni value
-    arr.uniq and arr.uniq! => removes duplicates
-
-#### Iterating
-
-    arr.each {|a|} => leaves the array unchanged
-    arr.reverse_each {|a|} => reverse order
-    arr.map and arr.map! => modifies array
-
-#### Selection
-
-    arr.select {|a| a > 3}
-    arr.reject {|a| a > 3}
-    arr.drop_while {|a| a < 4}
-    arr.delete_if
-    arr.keep_if
-
-#### Updating
-
-    a = [1, 3, 5, 7, 9]
-    a[2, 2] = 'cat' -> [1, 3, "cat", 9] #The 2 elements at the 2 position become 'cat'
-    a[2, 0] = 'dog' -> [1, 3, "dog", "cat", 9] #Since 0, replace 2 position with 'dog'
-    a[1, 1] = [9, 8, 7] -> [1, 9, 8, 7, "dog", "cat", 9] #Replace 1 position (length 1) with the array
-    a[0..3] = [] -> ["dog", "cat" 9] #Clear from 0 to 3 (inclusive)
-    a[5..6] = 99, 98 -> ["dog", "cat", 9, nil, nil, 99, 98] #Pad with null if elements in begin don't exist yet
-
-#### Destructive
-    arr.select! {|a| a > 3}
-    arr.reject!
-
-#### Public instance methods
-    ary & other_ary => combines the elements common to the two arrays, excluding duplicates
-
-    ary * int => triples the array size and fills
-    [1, 2, 3] * 3 => [1, 2, 3, 1, 2, 3, 1, 2, 3]
-
-    ary * str => "join"
-    [1, 2, 3] * ',' => "1,2,3"
-
-    ary + other_ary => concatenates the arrays
-    ary - other_ary => subtracts the arrays
-
-    arry << obj -> push to end of array, returns the array itself to several appends may be chained together
-
-
-# File: attr_reader_writer_accessor.md
-
-# What is `attr_accessor` in Ruby?
-[link](http://stackoverflow.com/questions/4370960/what-is-attr-accessor-in-ruby)
-
-    class Person
-      def greet
-        @name
-      end
-    end
-
-`attr_reader` means you can get the `name` variable inside. Right now we cannot do `person = Person.new; person.name` since there is no access. But with the reader,
-
-    class Person
-      attr_reader :name
-
-      def greet
-        @name
-      end
-    end
-
-We can do `person.name` (no errors), but we cannot edit what is inside the `name` since it doesn't have the `attr_writer` yet. So we do this:
-
-    class Person
-      attr_writer :name
-
-      def greet
-        @name
-      end
-    end
-
-Now we can set `person.name = "yolo"` and have `person.greet` return "yolo". However we cannot do `person.name` since we don't have the `attr_reader`. To be able to do things, you should include both:
-
-    attr_writer :name
-    attr_reader :name
-
-Or you could just do:
-
-    attr_accessor :name
-
-Why? Ruby, like Smalltalk, does not allow instance variables to be accessed outside of methods for that object (by default). Instance variables cannot be accessed in the `x.y` form, in Ruby `y` is always taken as a message to send. Thus the `attr_*` methods create wrappers which proxy the instance `@variable access through dynamically created methods.`
-
-`attr_accessor` is just a method, what it does is create more methods for you. These are equivalent:
-
-    class Foo
-      attr_accessor :bar
-    end
-
-    class Foo
-      def bar
-        @bar
-      end
-
-      def bar=(new_value)
-        @bar = new_value
-      end
-    end
-
-
-
 # File: classes-and-methods.md
 
 ## RubyMonk
-
-	x.class, 1.class, "".class
-	x.is_a?("Integer")
-	x.is_a?("String")
-	1.class.class 				# Class
-
+```ruby 
+x.class, 1.class, "".class
+x.is_a?("Integer")
+x.is_a?("String")
+1.class.class 				# Class
+```
 For a class to justify its existence, it needs to have two distinct features:
 
 1. State: It defines the attributes of its instances.
@@ -604,128 +278,138 @@ For a class to justify its existence, it needs to have two distinct features:
 
 Example:
 
-		class Rectangle
-		  def initialize(length, breadth)
-		    @length = length
-		    @breadth = breadth
-		  end
+```ruby 
+class Rectangle
+  def initialize(length, breadth)
+	@length = length
+	@breadth = breadth
+  end
 
-		  def perimeter
-		    2 * (@length + @breadth)
-		  end
-		  
-		  def area
-		    @length * @breadth
-		  end
+  def perimeter
+	2 * (@length + @breadth)
+  end
+  
+  def area
+	@length * @breadth
+  end
 
-		  #write the 'area' method here
-		end
+  #write the 'area' method here
+end
 
+```
 #### Methods
 
 Methods are also objects. 
+```ruby 
 
-	1.method("next") #<Method: Fixnum(Integer)#next>
+1.method("next") #<Method: Fixnum(Integer)#next>
+```
 
 Even a method that does nothing at all and has no return produces an object - `nil`.
 
 `Return` returns `nil` if no object is specified.
 
 Splat: Used to handle methods which has a variable parameter list.
+```ruby 
+def add(*numbers)
+  numbers.inject(0) { |sum, number| sum + number }
+end
 
-	def add(*numbers)
-	  numbers.inject(0) { |sum, number| sum + number }
-	end
+def add_with_message(message, *numbers)
+  "#{message} : #{add(*numbers)}"
+end
 
-	def add_with_message(message, *numbers)
-	  "#{message} : #{add(*numbers)}"
-	end
+puts add_with_message("The Sum is", 1, 2, 3)
 
-	puts add_with_message("The Sum is", 1, 2, 3)
-
+```
 3rd parameter hash example
+```ruby 
+def add(a_number, another_number, options = {})
+  sum = a_number + another_number
+  sum = sum.abs if options[:absolute]
+  sum = sum.round(options[:precision]) if options[:round]
+  sum
+end
 
-	def add(a_number, another_number, options = {})
-	  sum = a_number + another_number
-	  sum = sum.abs if options[:absolute]
-	  sum = sum.round(options[:precision]) if options[:round]
-	  sum
-	end
-
-	puts add(1.0134, -5.568)
-	puts add(1.0134, -5.568, absolute: true)
-	puts add(1.0134, -5.568, absolute: true, round: true, precision: 2)
-
+puts add(1.0134, -5.568)
+puts add(1.0134, -5.568, absolute: true)
+puts add(1.0134, -5.568, absolute: true, round: true, precision: 2)
+```
 Injects and shit
-
-	def add(*numbers)
-		numbers.inject(0) { |sum, number| sum + number }  
-	end
-
-	def subtract(*numbers)
-	  sum = numbers.shift
-	  numbers.inject(sum) { |sum, number| sum - number }  
-	end
-
-	def calculate(*arguments)
-	  # if the last argument is a Hash, extract it 
-	  # otherwise create an empty Hash
-	  options = arguments[-1].is_a?(Hash) ? arguments.pop : {}
-	  options[:add] = true if options.empty?
-	  return add(*arguments) if options[:add]
-	  return subtract(*arguments) if options[:subtract]
-	end
+```ruby 
 
 
+def add(*numbers)
+  numbers.inject(0) { |sum, number| sum + number }
+end
 
+def add_with_message(message, *numbers)
+  "#{message} : #{add(*numbers)}"
+end
 
+puts add_with_message("The Sum is", 1, 2, 3)
+def add(a_number, another_number, options = {})
+  sum = a_number + another_number
+  sum = sum.abs if options[:absolute]
+  sum = sum.round(options[:precision]) if options[:round]
+  sum
+end
 
+puts add(1.0134, -5.568)
+puts add(1.0134, -5.568, absolute: true)
+puts add(1.0134, -5.568, absolute: true, round: true, precision: 2)
 
+# Injects and shit
 
+def add(*numbers)
+	numbers.inject(0) { |sum, number| sum + number }  
+end
 
+def subtract(*numbers)
+  sum = numbers.shift
+  numbers.inject(sum) { |sum, number| sum - number }  
+end
 
+def calculate(*arguments)
+  # if the last argument is a Hash, extract it 
+  # otherwise create an empty Hash
+  options = arguments[-1].is_a?(Hash) ? arguments.pop : {}
+  options[:add] = true if options.empty?
+  return add(*arguments) if options[:add]
+  return subtract(*arguments) if options[:subtract]
+end
 
+```
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+``` ruby
+```
 
 # File: control-structures.md
 
-## [Making sense with Ruby's "unless"](http://37signals.com/svn/posts/2699-making-sense-with-rubys-unless) and [Unless, The Abused Ruby Conditional](http://www.railstips.org/blog/archives/2008/12/01/unless-the-abused-ruby-conditional/) and [If and Else](http://ruby.bastardsbook.com/chapters/ifelse/)
+##### [Making sense with Ruby's "unless"](http://37signals.com/svn/posts/2699-making-sense-with-rubys-unless) and [Unless, The Abused Ruby Conditional](http://www.railstips.org/blog/archives/2008/12/01/unless-the-abused-ruby-conditional/) and [If and Else](http://ruby.bastardsbook.com/chapters/ifelse/)
 
 The words `true` and `false` have special meaning in programming languages. In Ruby, they have the datatypes of `TrueClass` and `FalseClass`, respectively.
 
 These two values – true and false – are not Strings. 
+```ruby 
 
-		true == "true" 		# false
-		false == "false"	# false
+true == "true" 		# false
+false == "false"	# false
 
+```
 Everything except `false` and `nil` evaluates as `true` by an `if` statement.
 
 #### Variations on `if`
 
 Use `if = ` if the right side either returns something or `nothing at all`. 
 
+```ruby 
 	# remember that puts returns nil, so this code block will not execute.
-	if x = (puts 'hello world') 
-	   puts "Successful assignment. x is now #{x}"
-	end
+if x = (puts 'hello world') 
+   puts "Successful assignment. x is now #{x}"
+end
 
+```
 
 
 
@@ -740,36 +424,39 @@ Never ever use an `else` with an `unless` statement.
 
 `unless` actually reads better than if ! when used as a statement modifier. 
 
-	raise InvalidFormat unless AllowedFormats.include?(format) # instead of
-	raise InvalidFormat if !AllowedFormats.include?(format)
-
+```ruby 
+raise InvalidFormat unless AllowedFormats.include?(format) # instead of
+raise InvalidFormat if !AllowedFormats.include?(format)
+```
 testing `nil?` is bad.
+```ruby 
 
-	if foo ... # instead of
-	unless foo.nil? ...
+if foo ... # instead of
+unless foo.nil? ...
+```
 
-
-
-# File: enumerable.md
+# enumerable.md
 
 ## Ruby Enumerable Magic: The Basics
 [link](http://kconrails.com/2010/11/30/ruby-enumerable-primer-part-1-the-basics/)
 
 Ruby's arrays use Enumerable. To use this, we define the `each` method:
+```ruby
 
-    class Team
-      include Enumerable
+class Team
+  include Enumerable
 
-      attr_accessor :members
+  attr_accessor :members
 
-      def initialize
-        @members = []
-      end
+  def initialize
+	@members = []
+  end
 
-      def each(&block)
-        @members.each(&block)
-      end
-    end
+  def each(&block)
+	@members.each(&block)
+  end
+end
+```
 
 Basically what happens is that every time you call a `Team.each`, you iterate over the `@members`. (It is really common to just do this with the `Enumerable` module, forwarding the each over to an instance variable.) You are also able to use the other collection class methods (`map`, `filter`, etc...) because you defined the `each` method.
 
@@ -777,109 +464,117 @@ Basically what happens is that every time you call a `Team.each`, you iterate ov
 
 There is no `&:` operator in Ruby. *What you see in `&:capitalize` is `&` and `:capitalize` pushed together. The first character is the unary ampersand, the second is a Ruby symbol being passed to the operator.*
 
-When Ruby sees the unary ampersand on the last argument of a method, it tries to convert it to a proc and run it.
+**When Ruby sees the unary ampersand on the last argument of a method, it tries to convert it to a proc and run it.**
 
-    class Translator
-      def speak &language
-        language.call(self)
-      end
+```ruby 
+class Translator
+  def speak &language
+	language.call(self)
+  end
 
-      protected
+  protected
 
-      def french
-        'bon jour'
-      end
+  def french
+	'bon jour'
+  end
 
-      def spanish
-        'hola'
-      end
+  def spanish
+	'hola'
+  end
 
-      def turkey
-        'gobble'
-      end
+  def turkey
+	'gobble'
+  end
 
-      def method_missing *args
-        'awkward silence'
-      end
-    end
+  def method_missing *args
+	'awkward silence'
+  end
+end
 
-    translator.speak(&:spanish) #=> "hola"
-    translator.speak(&:turkey) #=> "gobble"
-    translator.speak(&:italian) #=> "awkward silence"
+translator.speak(&:spanish) #=> "hola"
+translator.speak(&:turkey) #=> "gobble"
+translator.speak(&:italian) #=> "awkward silence"
 
+```
 ## Enumerable API
 
 > The `Enumerable` mixin provides collection classes with several traversal and searching methods, and with the ability to sort. The class must provide a method `each`, which yields successive members of the collection.
 
 #### Filtering
 
-`all?`: Returns true if block never returns false or nil.
+```ruby 
+# `all?` # : Returns true if block never returns false or nil.
 
-    %w[ant bear cat].all? { |word| word.length >= 3 } #=> true
+%w[ant bear cat].all? { |word| word.length >= 3 } #=> true
 
-`any?`: Returns true if block HAS a true
+# `any?`: Returns true if block HAS a true
 
-    %w[ant bear cat].any? { |word| word.length >= 4 } #=> true
+%w[ant bear cat].any? { |word| word.length >= 4 } #=> true
 
-`chunk`: Better to use if the array is sorted. Literally creates chunks nung mga magkakatabi na pasok sa condition.
+```
 
-`detect(ifnone = nil){|obj| block }`: Return first match, if no object matches, call ifnone. Aliased as find.
+```ruby 
+# `chunk`: Better to use if the array is sorted. Literally creates chunks nung mga magkakatabi na pasok sa condition.
 
-`find_all{|obj| block}`: Filter out all that follows the condition.
+detect(ifnone = nil){|obj| block } # : Return first match, if no object matches, call ifnone. Aliased as find.
 
-    (1..10).find_all { |i| i % 2 == 0 } # Get all evens
+# find_all{|obj| block} # : Filter out all that follows the condition.
 
-`find_index(value), find_index {|obj| block }`: Returns the index of the first matcher.
+1..10).find_all { |i| i % 2 == 0 } # Get all evens
+# `find_index(value), find_index {|obj| block }`: Returns the index of the first matcher.
 
-`first, first(n)` (aliased as `take(n)`): Get first n elements.
+# `first, first(n)` (aliased as `take(n)`): Get first n elements.
 
-`grep(pattern)`: Returns an array of very element for which Pattern === element.
+# `grep(pattern)`: Returns an array of very element for which Pattern === element.
 
-    IO.constants.grep(/SEEK/) #=> [:SEEK_SET, :SEEK_CUR, :SEEK_END]
+IO.constants.grep(/SEEK/) #=> [:SEEK_SET, :SEEK_CUR, :SEEK_END]
 
-`include?(obj)`: Return if enum contains obj, equality is tested via `==`.
+`include?(obj)` # : Return if enum contains obj, equality is tested via `==`.
 
-`reject{ |obj| block }`: Return all elements for which the given block returns false.
+`reject{ |obj| block }` #: Return all elements for which the given block returns false.
 
-`partition { |obj| block }`: Returns two arrays, the first containing the elements of enum for which the block evaluates to true, the second containing the rest.
+`partition { |obj| block }` #: Returns two arrays, the first containing the elements of enum for which the block evaluates to true, the second containing the rest.
 
-`select { |obj| block }`: Return array containing elements who satisfy condition.
+`select { |obj| block }` # : Return array containing elements who satisfy condition.
 
-`take_while { |arr| block }`: Pass element to the block until the block returns `nil` or `false`, then stops iterating and returns an array of all prior elements.
+`take_while { |arr| block }` # : Pass element to the block until the block returns `nil` or `false`, then stops iterating and returns an array of all prior elements.
 
-    a = [1, 2, 3, 4, 5, 0]
-    a.take_while { |i| i < 3 }   #=> [1, 2]
-
+a = [1, 2, 3, 4, 5, 0]
+a.take_while { |i| i < 3 }   #=> [1, 2]
+```
 #### Iterate over
 
 `collect` (aliased as `map`): Returns a new array with the results of the block once for every element in the enum.
 
 `collect_concat` (Aliased as `flat_map`): Returns a new array with the concatenated results of running block once.
-
-    [1, 2, 3, 4].flat_map { |e| [e, -e] } #=> [1, -1, 2, -2, 3, -3, 4, -4]
+```ruby 
+[1, 2, 3, 4].flat_map { |e| [e, -e] } #=> [1, -1, 2, -2, 3, -3, 4, -4]
+```
 
 `cycle(n=nil){}`: Continuously call the block for each element of enum repeatedly n times or forever if none or nil is given as n. If no block is given, an enumerator is returned.
-
+~~~ruby
     [a, b, c].cycle { |x| puts x }  # print, a, b, c, a, b, c,.. forever.
     [a, b, c].cycle(2) { |x| puts x }  # print, a, b, c, a, b, c.
+~~~
 
 `each_cons(n){}`: Iterate the given block for each element and the next n elements.
-
+~~~ruby
     (1..10).each_cons(3) { |a| p a }
     # outputs below
     [1, 2, 3], [2, 3, 4], ... [8, 9, 10]
+~~~
 
 `each_slice(n){}`: Iterate over each slice of `<n>` elements. If no block is given, return an enumerator.
-
-    (1..10).each_slice(3){|a| p a} [1, 2, 3] [4, 5, 6] [7, 8, 9] [10]
+~~~ruby     
+(1..10).each_slice(3){|a| p a} [1, 2, 3] [4, 5, 6] [7, 8, 9] [10]
+~~~
 
 `each_with_index`: each but has an index passed in
-
 `each_with_object(obj){|elem, obj| a << i * 2}`: Iterate over the given block for each element with an arbitrary object, and reutrn the initially given object.
-
+~~~ruby 
     (1..10).each_with_object([]) { |i, a| a << i*2 }
     [2, 4, 6 ... 20]
-
+~~~
 >What happens is that the object a, which is initially a [], has each of the indices multiplied by 2 appended to i.
 
 `reverse_each(*args){ |item| block }` # Builds a temporary array and traverses that array in reverse order.
@@ -890,81 +585,84 @@ When Ruby sees the unary ampersand on the last argument of a method, it tries to
 
 `max`, `max{ |a, b| block }`: Return the object in enum using the comparator.
 
-`minmax {|a, b| block }`, `minmax_by { |a, b| block }`: Return 2 element array which contains the minimum and maximum value in the enumerable.
+`minmax {|a, b| block }`, `minmax_by { |a, b| block }`: Return 2 element array which contains 
 
+the minimum and maximum value in the enumerable.
 `none?[{ |obj| block }]`: Return `true` if the block never returns `true` for all elements.
-
-    %w{ant bear cat}.none? { |word| word.length == 5 } #=> true
-    [nil].none?                                        #=> true
+~~~ruby 
+%w{ant bear cat}.none? { |word| word.length == 5 } #=> true
+[nil].none?                                        #=> true
+~~~
 
 `one?[{ |obj| block }]`: Return `true` if the block returns `true` exactly once.
 
 #### Perform operation
 
-    (1..7).to_a ????
+`1..7).to_a ????``
 
 `inject(initial){ |memo, obj| block }`: My personal favorite! So verbatim that shit. :)
 
 Combines all elements of enum by applying a binary operation, specified by a block or a symbol that names a method or operator.
-
 If you specify a block, then for each element in enum the block is passed an accumulator value (memo) and the element. If you specify a symbol instead, then each element in the collection will be passed to the named method of memo. In either case, the result becomes the new value for memo. At the end of the iteration, the final value of memo is the return value for the method.
 
 If you do not explicitly specify an initial value for memo, then the first element of collection is used as the initial value of memo.
-
+~~~ruby
     # Sum some numbers
-    (5..10).reduce(:+)                             #=> 45
-    # Same using a block and inject
-    (5..10).inject { |sum, n| sum + n }            #=> 45
-    # Multiply some numbers
-    (5..10).reduce(1, :*)                          #=> 151200
-    # Same using a block
-    (5..10).inject(1) { |product, n| product * n } #=> 151200
-    # find the longest word
-    longest = %w{ cat sheep bear }.inject do |memo, word|
-       memo.length > word.length ? memo : word
-    end
-    longest                                        #=> "sheep"
+(5..10).reduce(:+)                             #=> 45
+# Same using a block and inject
+(5..10).inject { |sum, n| sum + n }            #=> 45
+# Multiply some numbers
+(5..10).reduce(1, :*)                          #=> 151200
+# Same using a block
+(5..10).inject(1) { |product, n| product * n } #=> 151200
+# find the longest word
+longest = %w{ cat sheep bear }.inject do |memo, word|
+   memo.length > word.length ? memo : word
+end
+longest                                        #=> "sheep"
 
-`reduce(initial){ |memo, obj| block }`: Near to reduce.
+# reduce(initial){ |memo, obj| block }`: Near to reduce.
 
-    # Sum some numbers
-    (5..10).reduce(:+)                             #=> 45
-    # Same using a block and inject
-    (5..10).inject { |sum, n| sum + n }            #=> 45
+# Sum some numbers
+(5..10).reduce(:+)                             #=> 45
+# Same using a block and inject
+(5..10).inject { |sum, n| sum + n }            #=> 45
+~~~
+
 
 `sort { |a, b| block }`, `sort_by`: Return a sorted array, block should return -1, 0, and +1, depending on the comparison between a and b.
 
-    %w(rhea kea flea).sort          #=> ["flea", "kea", "rhea"]
-    (1..10).sort { |a, b| b <=> a }  #=> [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+~~~ruby    
+%w(rhea kea flea).sort          #=> ["flea", "kea", "rhea"]
+(1..10).sort { |a, b| b <=> a }  #=> [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
 
 `zip(arg, ...)`: An array of array.
 
-    a = [ 4, 5, 6 ]
-    b = [ 7, 8, 9 ]
+a = [ 4, 5, 6 ]
+b = [ 7, 8, 9 ]
 
-    [1, 2, 3].zip(a, b)      #=> [[1, 4, 7], [2, 5, 8], [3, 6, 9]]
-    [1, 2].zip(a, b)         #=> [[1, 4, 7], [2, 5, 8]]
-    a.zip([1, 2], [8])       #=> [[4, 1, 8], [5, 2, nil], [6, nil, nil]]
-
+[1, 2, 3].zip(a, b)      #=> [[1, 4, 7], [2, 5, 8], [3, 6, 9]]
+[1, 2].zip(a, b)         #=> [[1, 4, 7], [2, 5, 8]]
+a.zip([1, 2], [8])       #=> [[4, 1, 8], [5, 2, nil], [6, nil, nil]]
+~~~
 #### Grouping
 
 `group_by{|obj| block}`: Groups the collection by result of the lock and returns a hash wehre the keys are the evaluated result from the block and the values are arrays of elements in the collection that correspond to the key.
-
-    (1..6).group_by { |i| i%3 }   #=> {0=>[3, 6], 1=>[1, 4], 2=>[2, 5]}
+```ruby 
+(1..6).group_by { |i| i%3 }   #=> {0=>[3, 6], 1=>[1, 4], 2=>[2, 5]}
+```
 
 #### Delete stuff
 
 `drop(n)`: Drop first n elements and return the rest in an array.
-
 `drop_while{|arr| block}`: Drop element up to, but not including, the first element for which the block returns nil or false and returns an array containing the remaining elements.
-
+~~~ruby
     a = [1, 2, 3, 4, 5, 0]
     a.drop_while { |i| i < 3 }   #=> [3, 4, 5, 0]
+~~~
+#### Misc.
 
-#### Misc
-
-`lazy`. Read this shit muna.
-
+`lazy`. 
 `to_a`, `to_h`: Conversion and shit to hashes.
 
 WTF
@@ -973,7 +671,7 @@ each_entry (PI this)
 slice_before()
 
 
-# File: equality.md
+#  equality
 
 ## [What's the difference between equal?, eql?, ===, and ==?](http://stackoverflow.com/questions/7156955/whats-the-difference-between-equal-eql-and)
 
@@ -982,8 +680,6 @@ slice_before()
 	eql?	-> generic/alternative equality
 	equal?	-> identity comparison. It's like a pointer comparison. Don't override.
 
-
-# File: exceptional-ruby.md
 
 # Exceptional Ruby
 
@@ -1596,46 +1292,44 @@ class SongList(index)
     @songs[index]
   end
 end
-Iterators
+# Iterators
 def with_title(title)
   songs.find {|song| title == song.name}
 end
 
-Each vs. collect: Collect takes each element from the collection and passes it to the block. The results returned by the block are used to construct a new array.
+# Each vs. collect: Collect takes each element from the collection and passes it to the block. The results returned by the block are used to construct a new array.
 
-  Inject: Set sum’s initial value, and iterate over the array using the inject.
-  [1, 3, 5, 7].inject(0) {|sum, element| sum + element}
-  [1, 3, 5, 7].inject(1) {|product, element| product * element}
+# Inject: Set sum’s initial value, and iterate over the array using the inject.
+[1, 3, 5, 7].inject(0) {|sum, element| sum + element}
+[1, 3, 5, 7].inject(1) {|product, element| product * element}
 
 # Blocks as code blocks
 
-    songlist = SongList.new
-    class JukeboxButton < Button
-        def initialize(label, &action)
-            super(label) 
-            @action = action
-        end
-        def button_pressed
-            @action.call(self)
-        end
-    end
+songlist = SongList.new
+class JukeboxButton < Button
+	def initialize(label, &action)
+		super(label) 
+		@action = action
+	end
+	def button_pressed
+		@action.call(self)
+	end
+end
 
 start_button = JukeboxButton.new("Start") { songlist.start } pause_button = JukeboxButton.new("Pause") { songlist.pause }
 ```
 
 You can essentially pass a closure or a function inside. When using an ampersand, you are telling Ruby to look for a code block whenever that method is called.
-
+~~~ruby
 restaurant_menu = { "Ramen" => 3, "Dal Makhani" => 4, "Coffee" => 2 }
 restaurant_menu.each do |item, price|
   restaurant_menu[item] = price + (price * 0.1)
 end
-
-
-# File: hook_methods.md
+~~~
+# hook_methods.md
 
 ## Ruby's Important Hook Methods
 [link](http://www.sitepoint.com/rubys-important-hook-methods/)
-
 
 # File: io.md
 

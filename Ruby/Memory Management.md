@@ -44,9 +44,7 @@ The algorithm contain of two phases, mark phase in this phase the GC marks all s
 - This involves 2 steps: Compact step and Update reference step to update pointers to objects after compaction. 
 - As of Ruby 3.0, if auto-compaction is enabled, compaction will actually happen as part of the sweeping phase.
 
-#### Memory Management:
-- Ruby's memory management and garbage collection mechanism were explored in this blog, providing insights into object allocation, heap pages, and the Mark-Sweep-Compact algorithm.
-- The next blog will focus on Variable Width Allocation in Ruby.
+
 
 #### Marked Bitmap 
 The marked bitmap is a data structure used to keep track of the marked status of objects in the memory. As the collector visits each reachable object, it marks the corresponding entry in the marked bitmap. The collector can efficiently iterate through the memory space, relying on the marked bitmap to identify live objects. After the sweeping phase, the marked bitmap may be reset or cleared to prepare for the next garbage collection cycle.
@@ -56,8 +54,6 @@ The marked bitmap is a data structure used to keep track of the marked status of
 - **Tomb page**: A page which contains only empty slots, it may returned back to system heap.
 - **Free list**: A linked list per Heap Page tracking empty slots.
 
-
-### Generational GC 
 
 # Generational Garbage Collection
 
@@ -93,12 +89,123 @@ Write barriers and remembered sets are mechanisms employed by Ruby's garbage col
 ## Generational Hypothesis
 - The generational hypothesis posits that most objects die young. By focusing on collecting the young generation frequently, generational garbage collection can quickly identify and collect short-lived objects, minimizing the impact on long-lived objects in the old generation.
 
-Generational garbage collection is a widely adopted strategy in modern garbage collectors, including those used in Java (e.g., the JVM's Garbage-First Garbage Collector) and some implementations of Ruby, such as the Ruby MRI (Matz's Ruby Implementation) with its "RGenGC" (Restricted Generational Garbage Collection) introduced in Ruby 2.1.
+
+## Incremental GC 
+Incremental garbage collection is a technique used in garbage collectors to break the garbage collection process into smaller, more manageable steps. Instead of stopping the entire application to perform garbage collection, incremental GC performs collection in small increments, allowing the application to continue running during the collection process.
+
+##  Why Tri-Color?
+- Before Ruby 2.2, Ruby used a simple Mark and Sweep algorithm with no colors.
+- The adoption of Incremental GC in Ruby 2.2 led to the introduction of the Tri-Color Mark and Sweep algorithm.
+## Stop-the-world
+- Ruby employs a stop-the-world garbage collector, causing the program execution to pause during GC runs.
+- Tri-Color Mark and Sweep algorithm introduces incremental pauses during garbage collection.
+## Incremental Pauses
+- Tri-Colors, especially the grey color, enable pausing garbage collection and resuming with known progress.
+- Tri-Color Mark and Sweep algorithm facilitates incremental execution of the mark phase.
+##  Write Barriers
+- Write barriers are used to address changes in objects during execution, ensuring incremental marking accuracy.
+- Write barrier unprotected objects are handled at the end of the incremental mark phase to minimize program interference.
+##  Additional Work
+- Tri-Color Mark and Sweep algorithm introduces additional work for the garbage collector.
+- Incremental GC mitigates execution pausing, balancing increased marking time with smoother program execution.
+## Glossary
+- **Stop-the-world:** Refers to program execution pausing for garbage collection.
+- **Incremental GC:** Allows for gradual marking to reduce program interference.
+- **Write Barrier Unprotected Objects:** Addressed at the end of the incremental mark phase.
 
 
 
+# Fragmentation and Compaction in the Ruby Heap
 
-## ObjectSpace 
+## Fragmentation
+- Fragmentation is the term used to describe non-contiguous memory allocation, with gaps between meaningful and non-meaningful information.
+- In the Ruby Heap, fragmentation occurs when there are free, unallocated slots between allocated slots, leading to inefficient memory usage.
+## Why Compact?
+- Compaction is the solution to fragmentation, aiming to reduce overall memory usage and make CPU cache accesses more efficient.
+- It improves copy-on-write friendliness and potentially enables more efficient memory usage in future adaptations.
+
+## CPU Cache Hits
+- The OS loads small memory chunks into a cache for quicker access, and having more RVALUES in each chunk improves cache hit rates.
+- A fragmented heap leads to less efficient cache usage, while compaction can pack the cache with meaningful RVALUES.
+##  Copy on Write Friendliness
+- Compaction enhances copy-on-write friendliness by reducing the need for copying already allocated memory chunks during child process writes.
+- In a compacted heap, most of the copied memory would be unallocated, making the process more efficient.
+##  Efficient Memory Usage
+- Although not immediately relevant to Ruby, compaction aims to optimize memory usage, especially in systems with varying object sizes.
+- For Ruby with constant object size, it may still be beneficial for potential future adaptations.
+## Two Finger Compaction
+- Ruby uses a two-finger compaction algorithm, moving objects from top and bottom pointers to effectively reduce fragmentation.
+- The algorithm converges the pointers, filling in free slots with RVALUES and updating references accordingly.
+## Move Objects
+- The two pointers in the algorithm move objects in the heap, filling empty slots from the bottom with RVALUES from the top.
+- Ruby's GC leaves forwarding addresses for moved RVALUES and updates references to ensure the integrity of the moved objects.
+## Update References
+- Ruby's GC iterates over the heap, updating references and clearing forwarding addresses for the moved RVALUES.
+- The process ensures that the references point to the new locations of the RVALUES after compaction.
+
+## Glossary
+- **Fragmentation:** Non-contiguous memory allocation
+- **Compaction:** Grouping allocated memory together to solve fragmentation
+
+
+# Understanding Ruby `object_id` and its Evolution 
+
+## Ruby `object_id` and GC Strategies
+- Ruby `object_id` serves as a unique identifier for a specific instance of an object.
+- Special cases of `Object#object_id` include `true`, `false`, `nil`, and Integers.
+## Pre-Ruby 2.7 `Object#object_id`
+- In Ruby versions below 2.7, `object_id` depended on memory address.
+- The address is in hexadecimal, and conversion to decimal is used for `object_id`.
+
+```ruby 
+obj = Object.new  
+# > <Object:0x00007fb8240a8ca8>
+
+address = obj.inspect.match(/0x([0-9a-f]+)/)[1] 
+# "00007fb8240a8ca8"
+
+obj.object_id == address.to_i(16) >> 1 
+# > true 
+```
+
+ 
+## Ruby 2.7 Onwards `Object#object_id`
+
+- Ruby 2.7 introduced compaction, which changed memory addresses of some objects.
+- `Object#object_id` is now determined using a monotonically increasing counter.
+
+```ruby 
+array = 100_000.times.map { Object.new }
+
+obj = Object.new
+=> #<Object:0x00007f9863aa81d0>
+obj.object_id
+=> 260
+
+array = nil
+GC.compact
+
+# New memory address (7f9863aa81d0 != 7f9864049e40)
+obj.inspect
+=> "#<Object:0x00007f9864049e40>"
+
+# Same object_id (260 == 260)
+obj.object_id
+=> 260
+
+```
+
+## Effect of Compaction on `object_ids`
+
+- Compaction does not affect `object_ids`; they remain consistent.
+- An object is only assigned an `object_id` when `Object#object_id` is called on it.
+- Prior to Ruby 2.7 `Object#object_id` depended on memory address
+- Ruby 2.7 introduced compaction which meant some objects’ memory addresses could change
+- From Ruby 2.7 onwards, `Object#object_id` is determined using a monotonically increasing counter
+- An object is only assigned an `object_id` when `Object#object_id` is called on it
+
+
+# ObjectSpace 
 
 `ObjectSpace` in Ruby provides a way to interact with the Ruby runtime's object allocation system. It allows you to enumerate and manipulate living objects within the Ruby process.
 
