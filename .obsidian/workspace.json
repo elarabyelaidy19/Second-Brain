@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "eab0df4bd63c5134",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Index.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ruby/Memory Management.md",
+                "file": "Index.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Ruby/Memory Management.md",
+                "file": "Index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Ruby/Memory Management.md"
+                "file": "Index.md"
               }
             }
           },
@@ -165,14 +178,15 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "5e55b389cdbe4370",
+  "active": "eab0df4bd63c5134",
   "lastOpenFiles": [
+    "Ruby/Memory Management.md",
+    "Index.md",
+    "[Blog.md",
     "Programming Languages/Memory Management.md",
     "Ruby/Ruby.md",
     "Ruby/Standard Library.md",
     "Ruby/Ruby IO.md",
-    "Ruby/Memory Management.md",
-    "[Blog.md",
     "Ruby/assets/GC.png",
     "Excalidraw/Drawing 2023-12-18 19.20.24.excalidraw.md",
     "Ruby/assets/Memory.md",
