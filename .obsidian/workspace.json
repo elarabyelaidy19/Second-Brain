@@ -30,9 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "b04f832c4a2e5d88",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Rails Base.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Index.md",
+                "file": "Rails Base.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Index.md",
+                "file": "Rails Base.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Index.md"
+                "file": "Rails Base.md"
               }
             }
           },
@@ -178,10 +190,11 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "eab0df4bd63c5134",
+  "active": "b04f832c4a2e5d88",
   "lastOpenFiles": [
-    "Ruby/Memory Management.md",
     "Index.md",
+    "Rails Base.md",
+    "Ruby/Memory Management.md",
     "[Blog.md",
     "Programming Languages/Memory Management.md",
     "Ruby/Ruby.md",
@@ -213,7 +226,6 @@
     "System Engineering/Eurekas.md",
     "System Engineering/Linux.md",
     "Zlib.md",
-    "2023-12-13.md",
     "tracked_files.json",
     "System Engineering/assets/AI_UCB_2.png",
     "System Engineering/Img/app_tras.png",
