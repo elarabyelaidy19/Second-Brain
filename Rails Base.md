@@ -15,4 +15,7 @@
 
 ## Asset pipeline  
 - configure the CSS style file at manifiest.js `//= link users.css` 
-- 
+
+
+## Clear Cache 
+- if there is a repeated error try to clear cache `rails tmp:cache:clear`  
