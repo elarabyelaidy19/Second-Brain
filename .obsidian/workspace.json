@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Index.md",
+                "file": "Misc/Index.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Rails/RailsConf 2023.md",
+                "file": "OBJECTS/behavioral Design Patterns.md",
                 "mode": "source",
                 "source": false
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Rails/RailsConf 2023.md",
+                "file": "OBJECTS/behavioral Design Patterns.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Rails/RailsConf 2023.md",
+                "file": "OBJECTS/behavioral Design Patterns.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Rails/RailsConf 2023.md"
+                "file": "OBJECTS/behavioral Design Patterns.md"
               }
             }
           },
@@ -216,10 +216,13 @@
   },
   "active": "5671ddc0a36c1ccb",
   "lastOpenFiles": [
-    "Rails/Devise.md",
+    "Misc/Formatting.md",
+    "Work",
+    "Misc",
+    "Books/Books.md",
     "Rails/RailsConf 2023.md",
-    "Index.md",
-    "Books.md",
+    "Rails/Devise.md",
+    "Misc/Index.md",
     "Rails/Rails Base.md",
     "Rails/PostGIS.md",
     "Ruby/Memory Management.md",
@@ -241,14 +244,12 @@
     "Rails/Background Jobs.md",
     "Security/Authentication.md",
     "README.md",
-    "Formatting.md",
     "Pasted image 20231213213228.png",
     "System Engineering/Operating Systems Fundamentals.md",
     "assets/seesionv.md",
     "assets",
     "Security/Security.md",
     "Security/assets/sessionsvscokies.png",
-    "Ruby/Ruby Index.md",
     "Security/assets",
     "tracked_files.json",
     "System Engineering/assets/AI_UCB_2.png",
@@ -259,8 +260,6 @@
     "Excalidraw",
     "Personal Growth",
     "OBJECTS",
-    "Security",
-    "Tools/img/git1.png",
-    "Tools/img"
+    "Tools/img/git1.png"
   ]
 }
