@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OBJECTS/behavioral Design Patterns.md",
+                "file": "Rails/Associations.md",
                 "mode": "source",
                 "source": false
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "OBJECTS/behavioral Design Patterns.md",
+                "file": "Rails/Associations.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "OBJECTS/behavioral Design Patterns.md",
+                "file": "Rails/Associations.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "OBJECTS/behavioral Design Patterns.md"
+                "file": "Rails/Associations.md"
               }
             }
           },
@@ -216,6 +216,9 @@
   },
   "active": "5671ddc0a36c1ccb",
   "lastOpenFiles": [
+    "Rails/TIL.md",
+    "Rails/Associations.md",
+    "OBJECTS/behavioral Design Patterns.md",
     "Misc/Formatting.md",
     "Work",
     "Misc",
@@ -246,9 +249,7 @@
     "README.md",
     "Pasted image 20231213213228.png",
     "System Engineering/Operating Systems Fundamentals.md",
-    "assets/seesionv.md",
     "assets",
-    "Security/Security.md",
     "Security/assets/sessionsvscokies.png",
     "Security/assets",
     "tracked_files.json",
