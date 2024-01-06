@@ -1,0 +1,3 @@
+- add avo gem to the Gemfile 
+- run `rails g avo:install` 
+- 

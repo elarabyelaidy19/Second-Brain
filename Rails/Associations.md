@@ -22,3 +22,5 @@ delegate :currency, to: :store
 ```
 
 This line means that the current object will delegate the `currency` method to the `store` object. In other words, if you call `currency` on the object where this `delegate` is used, it will be forwarded to the `currency` method of the associated `store` object.
+
+

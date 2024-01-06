@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Rails/Associations.md",
+                "file": "Rails/Pundit.md",
                 "mode": "source",
                 "source": false
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Rails/Associations.md",
+                "file": "Rails/Pundit.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Rails/Associations.md",
+                "file": "Rails/Pundit.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Rails/Associations.md"
+                "file": "Rails/Pundit.md"
               }
             }
           },
@@ -216,6 +216,9 @@
   },
   "active": "5671ddc0a36c1ccb",
   "lastOpenFiles": [
+    "Rails/Avo.md",
+    "Rails/Pundit.md",
+    "Rails/Rails Commands.md",
     "Rails/TIL.md",
     "Rails/Associations.md",
     "OBJECTS/behavioral Design Patterns.md",
@@ -245,10 +248,7 @@
     "Ruby/assets",
     "Rails/Database.md",
     "Rails/Background Jobs.md",
-    "Security/Authentication.md",
-    "README.md",
     "Pasted image 20231213213228.png",
-    "System Engineering/Operating Systems Fundamentals.md",
     "assets",
     "Security/assets/sessionsvscokies.png",
     "Security/assets",
