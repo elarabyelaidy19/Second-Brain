@@ -6,4 +6,4 @@
 <p class="alert"><%= alert %></p> 
 ```
 - create devise user `rails g devise user` and migrate 
-- 
+- create devise views `rails g devise:views`
