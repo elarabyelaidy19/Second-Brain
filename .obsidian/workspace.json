@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Misc/Index.md",
+                "file": "Rails/TIL.md",
                 "mode": "source",
                 "source": false
               }
@@ -73,14 +73,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Rails/Avo.md",
+                "file": "Rails/Rails Patterns.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -146,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Rails/Avo.md",
+                "file": "Rails/TIL.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -163,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Rails/Avo.md",
+                "file": "Rails/TIL.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Rails/Avo.md"
+                "file": "Rails/TIL.md"
               }
             }
           },
@@ -226,16 +226,20 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "c08e59f96e1cd267",
+  "active": "eab0df4bd63c5134",
   "lastOpenFiles": [
-    "Rails/Devise.md",
-    "Rails/Avo.md",
-    "Scripts/Useful Scripts.md",
+    "Rails/Rails performance CheatSheet.md",
+    "Misc/Index.md",
+    "Rails/Rails Base.md",
     "TIL/2023-12-05.md",
+    "Rails/Rails Patterns.md",
+    "Rails/TIL.md",
+    "Rails/Avo.md",
+    "Rails/Devise.md",
+    "Scripts/Useful Scripts.md",
     "Scripts",
     "Rails/Pundit.md",
     "Rails/Rails Commands.md",
-    "Rails/TIL.md",
     "Rails/Associations.md",
     "OBJECTS/behavioral Design Patterns.md",
     "Misc/Formatting.md",
@@ -243,8 +247,6 @@
     "Misc",
     "Books/Books.md",
     "Rails/RailsConf 2023.md",
-    "Misc/Index.md",
-    "Rails/Rails Base.md",
     "Rails/PostGIS.md",
     "Ruby/Memory Management.md",
     "[Blog.md",
@@ -257,9 +259,7 @@
     "Ruby/assets/Memory.md",
     "Ruby/assets/heap.png",
     "Books/Agile Rails.md",
-    "Books/the well grounded rubyiest.md",
     "Books",
-    "Rails/Elasticsearch.md",
     "Ruby/assets",
     "Pasted image 20231213213228.png",
     "assets",
