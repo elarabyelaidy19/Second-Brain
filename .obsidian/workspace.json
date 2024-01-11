@@ -8,24 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "5e55b389cdbe4370",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Ruby/Memory Management.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "eab0df4bd63c5134",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Rails/TIL.md",
+                "file": "2024-01-10.md",
                 "mode": "source",
                 "source": false
               }
@@ -37,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Rails/Rails Base.md",
+                "file": "Rails/Rails Patterns.md",
                 "mode": "source",
                 "source": false
               }
@@ -66,21 +54,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "c08e59f96e1cd267",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Rails/Rails Patterns.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -146,7 +121,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Rails/TIL.md",
+                "file": "2024-01-10.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -163,7 +138,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Rails/TIL.md",
+                "file": "2024-01-10.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Rails/TIL.md"
+                "file": "2024-01-10.md"
               }
             }
           },
@@ -211,8 +186,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -228,15 +202,18 @@
   },
   "active": "eab0df4bd63c5134",
   "lastOpenFiles": [
+    "Rails/Rails Patterns.md",
+    "Rails/Rails Base.md",
+    "Scripts/Useful Scripts.md",
+    "2024-01-10.md",
+    "Ruby/Memory Management.md",
+    "TIL/2023-12-05.md",
+    "TIL/Untitled.md",
+    "Rails/TIL.md",
     "Rails/Rails performance CheatSheet.md",
     "Misc/Index.md",
-    "Rails/Rails Base.md",
-    "TIL/2023-12-05.md",
-    "Rails/Rails Patterns.md",
-    "Rails/TIL.md",
     "Rails/Avo.md",
     "Rails/Devise.md",
-    "Scripts/Useful Scripts.md",
     "Scripts",
     "Rails/Pundit.md",
     "Rails/Rails Commands.md",
@@ -248,7 +225,6 @@
     "Books/Books.md",
     "Rails/RailsConf 2023.md",
     "Rails/PostGIS.md",
-    "Ruby/Memory Management.md",
     "[Blog.md",
     "Programming Languages/Memory Management.md",
     "Ruby/Ruby.md",
@@ -256,9 +232,7 @@
     "Ruby/Ruby IO.md",
     "Ruby/assets/GC.png",
     "Excalidraw/Drawing 2023-12-18 19.20.24.excalidraw.md",
-    "Ruby/assets/Memory.md",
     "Ruby/assets/heap.png",
-    "Books/Agile Rails.md",
     "Books",
     "Ruby/assets",
     "Pasted image 20231213213228.png",
