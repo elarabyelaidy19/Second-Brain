@@ -63,7 +63,7 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "byModifiedTime"
+                "sortOrder": "byCreatedTime"
               }
             }
           },
