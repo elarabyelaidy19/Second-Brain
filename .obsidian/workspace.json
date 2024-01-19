@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2024-01-10.md",
+                "file": "TIL/2024-01-11.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Rails/Rails Patterns.md",
+                "file": "Rails/Gems.md",
                 "mode": "source",
                 "source": false
               }
@@ -42,20 +42,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "5671ddc0a36c1ccb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TIL/2023-12-05.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -121,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2024-01-10.md",
+                "file": "Rails/Gems.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -138,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2024-01-10.md",
+                "file": "Rails/Gems.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -161,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2024-01-10.md"
+                "file": "Rails/Gems.md"
               }
             }
           },
@@ -196,18 +185,20 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "eab0df4bd63c5134",
+  "active": "b04f832c4a2e5d88",
   "lastOpenFiles": [
     "Rails/Rails Patterns.md",
+    "Rails/Gems.md",
+    "TIL/2024-01-11.md",
+    "TIL/2024-01-10.md",
+    "TIL/2023-12-05.md",
     "Rails/Rails Base.md",
     "Scripts/Useful Scripts.md",
-    "2024-01-10.md",
     "Ruby/Memory Management.md",
-    "TIL/2023-12-05.md",
     "TIL/Untitled.md",
     "Rails/TIL.md",
     "Rails/Rails performance CheatSheet.md",
@@ -229,9 +220,7 @@
     "Programming Languages/Memory Management.md",
     "Ruby/Ruby.md",
     "Ruby/Standard Library.md",
-    "Ruby/Ruby IO.md",
     "Ruby/assets/GC.png",
-    "Excalidraw/Drawing 2023-12-18 19.20.24.excalidraw.md",
     "Ruby/assets/heap.png",
     "Books",
     "Ruby/assets",
