@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Rails/Gems.md",
+                "file": "Rails/Rails new.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Rails/Gems.md",
+                "file": "Rails/Rails new.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Rails/Gems.md",
+                "file": "Rails/Rails new.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Rails/Gems.md"
+                "file": "Rails/Rails new.md"
               }
             }
           },
@@ -191,8 +191,9 @@
   },
   "active": "b04f832c4a2e5d88",
   "lastOpenFiles": [
-    "Rails/Rails Patterns.md",
     "Rails/Gems.md",
+    "Rails/Rails new.md",
+    "Rails/Rails Patterns.md",
     "TIL/2024-01-11.md",
     "TIL/2024-01-10.md",
     "TIL/2023-12-05.md",
@@ -219,7 +220,6 @@
     "[Blog.md",
     "Programming Languages/Memory Management.md",
     "Ruby/Ruby.md",
-    "Ruby/Standard Library.md",
     "Ruby/assets/GC.png",
     "Ruby/assets/heap.png",
     "Books",
