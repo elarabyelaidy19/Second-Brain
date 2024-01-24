@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Rails/Rails new.md",
+                "file": "Security/Authentication.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Rails/Rails new.md",
+                "file": "Security/Authentication.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Rails/Rails new.md",
+                "file": "Security/Authentication.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Rails/Rails new.md"
+                "file": "Security/Authentication.md"
               }
             }
           },
@@ -191,8 +191,8 @@
   },
   "active": "b04f832c4a2e5d88",
   "lastOpenFiles": [
-    "Rails/Gems.md",
     "Rails/Rails new.md",
+    "Rails/Gems.md",
     "Rails/Rails Patterns.md",
     "TIL/2024-01-11.md",
     "TIL/2024-01-10.md",
