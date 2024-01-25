@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Security/Authentication.md",
+                "file": "Ruby On Conference/Ruby Talks.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Security/Authentication.md",
+                "file": "Ruby On Conference/Ruby Talks.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Security/Authentication.md",
+                "file": "Ruby On Conference/Ruby Talks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Security/Authentication.md"
+                "file": "Ruby On Conference/Ruby Talks.md"
               }
             }
           },
@@ -191,6 +191,9 @@
   },
   "active": "b04f832c4a2e5d88",
   "lastOpenFiles": [
+    "Security/Authentication.md",
+    "Ruby On Conference/Ruby Talks.md",
+    "Ruby On Conference",
     "Rails/Rails new.md",
     "Rails/Gems.md",
     "Rails/Rails Patterns.md",
@@ -218,8 +221,6 @@
     "Rails/RailsConf 2023.md",
     "Rails/PostGIS.md",
     "[Blog.md",
-    "Programming Languages/Memory Management.md",
-    "Ruby/Ruby.md",
     "Ruby/assets/GC.png",
     "Ruby/assets/heap.png",
     "Books",
@@ -235,7 +236,6 @@
     "System Engineering/Img/csmacdDIA.png",
     "Pasted Image 20231207194804_842.png",
     "Excalidraw",
-    "Personal Growth",
     "Tools/img/git1.png"
   ]
 }
