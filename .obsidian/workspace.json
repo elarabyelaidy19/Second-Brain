@@ -25,14 +25,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "Ruby On Conference/Ruby Talks.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "aac5c570f4221582",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Ruby On Conference/Rails Talks.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "Ruby On Conference/Rails Talks.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "Ruby On Conference/Rails Talks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "Ruby On Conference/Rails Talks.md"
               }
             }
           },
@@ -177,11 +189,12 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "b04f832c4a2e5d88",
+  "active": "aac5c570f4221582",
   "lastOpenFiles": [
-    "Rails/PostGIS.md",
-    "README.md",
     "Ruby On Conference/Ruby Talks.md",
+    "Ruby On Conference/Rails Talks.md",
+    "README.md",
+    "Rails/PostGIS.md",
     "Security/Authentication.md",
     "Ruby On Conference",
     "Rails/Rails new.md",
@@ -208,7 +221,6 @@
     "Work",
     "Misc",
     "Books/Books.md",
-    "Rails/RailsConf 2023.md",
     "Ruby/assets/GC.png",
     "Ruby/assets/heap.png",
     "Books",
