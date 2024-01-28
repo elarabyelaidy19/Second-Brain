@@ -1,6 +1,6 @@
   
   
-
+[David Coopeland]() 
 ### The Critical Importance of Data in Application Management
 
   
