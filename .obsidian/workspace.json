@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Ruby On Conference/Ruby Talks.md",
+                "file": "Conferences/Ruby Talks.md",
                 "mode": "source",
                 "source": false
               }
@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Ruby On Conference/Rails Talks.md",
+                "file": "Conferences/Misc.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ruby On Conference/Rails Talks.md",
+                "file": "Conferences/Misc.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Ruby On Conference/Rails Talks.md",
+                "file": "Conferences/Misc.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Ruby On Conference/Rails Talks.md"
+                "file": "Conferences/Misc.md"
               }
             }
           },
@@ -191,12 +191,13 @@
   },
   "active": "aac5c570f4221582",
   "lastOpenFiles": [
-    "Ruby On Conference/Ruby Talks.md",
-    "Ruby On Conference/Rails Talks.md",
+    "Conferences/Rails Talks.md",
+    "Conferences/Misc.md",
+    "Conferences/Ruby Talks.md",
     "README.md",
     "Rails/PostGIS.md",
     "Security/Authentication.md",
-    "Ruby On Conference",
+    "Conferences",
     "Rails/Rails new.md",
     "Rails/Gems.md",
     "Rails/Rails Patterns.md",
@@ -220,7 +221,6 @@
     "Misc/Formatting.md",
     "Work",
     "Misc",
-    "Books/Books.md",
     "Ruby/assets/GC.png",
     "Ruby/assets/heap.png",
     "Books",
