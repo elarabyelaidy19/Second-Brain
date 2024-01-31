@@ -15,6 +15,9 @@ find . -name '*.rb' | xargs wc -l
 rails s -p PortNumber
 ```
 
-
+- remove all local branches except main 
+```shell 
+git branch | grep -v 'main' | xargs git branch -D
+```
 
 
