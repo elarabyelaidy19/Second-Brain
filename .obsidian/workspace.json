@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Conferences/Misc.md",
+                "file": "Rails/Database.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Conferences/Misc.md",
+                "file": "Rails/Database.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Conferences/Misc.md",
+                "file": "Rails/Database.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Conferences/Misc.md"
+                "file": "Rails/Database.md"
               }
             }
           },
@@ -191,8 +191,9 @@
   },
   "active": "aac5c570f4221582",
   "lastOpenFiles": [
-    "Conferences/Rails Talks.md",
+    "Tools/Docker.md",
     "Conferences/Misc.md",
+    "Conferences/Rails Talks.md",
     "Conferences/Ruby Talks.md",
     "README.md",
     "Rails/PostGIS.md",
@@ -218,7 +219,6 @@
     "Rails/Rails Commands.md",
     "Rails/Associations.md",
     "OBJECTS/behavioral Design Patterns.md",
-    "Misc/Formatting.md",
     "Work",
     "Misc",
     "Ruby/assets/GC.png",
