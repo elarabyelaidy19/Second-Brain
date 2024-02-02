@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Rails/Database.md",
+                "file": "System Engineering/Linux.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Rails/Database.md",
+                "file": "System Engineering/Linux.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Rails/Database.md",
+                "file": "System Engineering/Linux.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Rails/Database.md"
+                "file": "System Engineering/Linux.md"
               }
             }
           },
@@ -191,9 +191,15 @@
   },
   "active": "aac5c570f4221582",
   "lastOpenFiles": [
+    "System Engineering/Computer Networking Fundamentals.md",
+    "System Engineering/Eurekas.md",
+    "System Engineering/Linux.md",
+    "System Engineering/Operating Systems Fundamentals.md",
+    "TIL/2024-01-11.md",
+    "TIL/2024-01-10.md",
+    "Rails/Database.md",
     "Scripts/Useful Scripts.md",
     "Rails/TIL.md",
-    "Rails/Database.md",
     "Tools/Docker.md",
     "Conferences/Misc.md",
     "Conferences/Rails Talks.md",
@@ -205,8 +211,6 @@
     "Rails/Rails new.md",
     "Rails/Gems.md",
     "Rails/Rails Patterns.md",
-    "TIL/2024-01-11.md",
-    "TIL/2024-01-10.md",
     "TIL/2023-12-05.md",
     "Rails/Rails Base.md",
     "Ruby/Memory Management.md",
@@ -214,11 +218,7 @@
     "Rails/Rails performance CheatSheet.md",
     "Misc/Index.md",
     "Rails/Avo.md",
-    "Rails/Devise.md",
     "Scripts",
-    "Rails/Pundit.md",
-    "Rails/Rails Commands.md",
-    "Rails/Associations.md",
     "Work",
     "Misc",
     "Ruby/assets/GC.png",
