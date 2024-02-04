@@ -43,8 +43,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -110,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "System Engineering/Linux.md",
+                "file": "TIL/2024-01-11.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -127,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "System Engineering/Linux.md",
+                "file": "TIL/2024-01-11.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "System Engineering/Linux.md"
+                "file": "TIL/2024-01-11.md"
               }
             }
           },
@@ -189,11 +188,11 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "aac5c570f4221582",
+  "active": "eab0df4bd63c5134",
   "lastOpenFiles": [
+    "System Engineering/Linux.md",
     "System Engineering/Computer Networking Fundamentals.md",
     "System Engineering/Eurekas.md",
-    "System Engineering/Linux.md",
     "System Engineering/Operating Systems Fundamentals.md",
     "TIL/2024-01-11.md",
     "TIL/2024-01-10.md",
