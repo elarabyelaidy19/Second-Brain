@@ -36,8 +36,7 @@ class <%= class_name %>Service
 
   def self.find_<%= singular_name %>(id)
     <%= class_name %>.find(id)
-  end
-
+  end 
 end
 ```
 
