@@ -28,3 +28,5 @@ Person.includes(:role).select { |p| p.role.billable? } # prevent N+1
 ```ruby 
 add_refernces :pople, :manager, foreign_key: {to_table: :people}  
 ```
+
+##
