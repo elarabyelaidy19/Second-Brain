@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Conferences/Rails Talks.md",
+                "file": "Rails/Rails Base.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Conferences/Rails Talks.md",
+                "file": "Rails/Rails Base.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Conferences/Rails Talks.md",
+                "file": "Rails/Rails Base.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Conferences/Rails Talks.md"
+                "file": "Rails/Rails Base.md"
               }
             }
           },
@@ -166,20 +166,20 @@
   },
   "active": "aac5c570f4221582",
   "lastOpenFiles": [
+    "TIL/2024-01-10.md",
+    "TIL/2024-01-11.md",
+    "Conferences/Rails Talks.md",
     "System Engineering/Linux.md",
     "Rails/RailsConf 2023.md",
     "Conferences/Ruby Talks.md",
     "Rails/Database.md",
-    "TIL/2024-01-11.md",
     "System Engineering/Computer Networking Fundamentals.md",
     "System Engineering/Eurekas.md",
     "System Engineering/Operating Systems Fundamentals.md",
-    "TIL/2024-01-10.md",
     "Scripts/Useful Scripts.md",
     "Rails/TIL.md",
     "Tools/Docker.md",
     "Conferences/Misc.md",
-    "Conferences/Rails Talks.md",
     "README.md",
     "Rails/PostGIS.md",
     "Security/Authentication.md",
