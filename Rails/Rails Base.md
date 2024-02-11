@@ -51,3 +51,6 @@ class ServiceGenerator < Rails::Generators::NamedBase
 
 end
 ```
+
+## Rails Stats 
+
