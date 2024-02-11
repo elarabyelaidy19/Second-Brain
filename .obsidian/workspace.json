@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "a2aa19b7365fff6f",
+        "id": "1fd2cb96755ba3e7",
         "type": "tabs",
         "children": [
           {
-            "id": "aac5c570f4221582",
+            "id": "6588c1795d0008d7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Database Systems/Postgresql.md",
+                "file": "Rails/Database Performance.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Database Systems/Postgresql.md",
+                "file": "Rails/Database Performance.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Database Systems/Postgresql.md",
+                "file": "Rails/Database Performance.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Database Systems/Postgresql.md"
+                "file": "Rails/Database Performance.md"
               }
             }
           },
@@ -164,10 +164,17 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "aac5c570f4221582",
+  "active": "6588c1795d0008d7",
   "lastOpenFiles": [
-    "Scripts/Useful Scripts.md",
+    "Rails/Rails new.md",
+    "Rails/Database Performance.md",
     "Database Systems/Postgresql.md",
+    "Performance Benchmark.md",
+    "Rails/Avo.md",
+    "Rails/Background Jobs.md",
+    "Rails/PostGIS.md",
+    "Rails/Database.md",
+    "Scripts/Useful Scripts.md",
     "System Engineering/Linux.md",
     "Rails/Rails Base.md",
     "TIL/2024-01-10.md",
@@ -175,7 +182,6 @@
     "Conferences/Rails Talks.md",
     "Rails/RailsConf 2023.md",
     "Conferences/Ruby Talks.md",
-    "Rails/Database.md",
     "System Engineering/Computer Networking Fundamentals.md",
     "System Engineering/Eurekas.md",
     "System Engineering/Operating Systems Fundamentals.md",
@@ -183,16 +189,10 @@
     "Tools/Docker.md",
     "Conferences/Misc.md",
     "README.md",
-    "Rails/PostGIS.md",
     "Security/Authentication.md",
     "Conferences",
-    "Rails/Rails new.md",
     "Rails/Gems.md",
     "Rails/Rails Patterns.md",
-    "TIL/2023-12-05.md",
-    "Ruby/Memory Management.md",
-    "TIL/Untitled.md",
-    "Rails/Rails performance CheatSheet.md",
     "Scripts",
     "Work",
     "Misc",

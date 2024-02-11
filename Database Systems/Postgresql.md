@@ -2,9 +2,6 @@
 ## Performance Benchmark 
 ### [PG_STATS_STATEMENT](https://www.postgresql.org/docs/current/pgstatstatements.html) 
 The `pg_stat_statements` module provides a means for tracking planning and execution statistics of all SQL statements executed by a server. 
-
-
-
 ## How To Enable  
 - first create the pg_stat_statement extinsion for the desired database. 
 - enable shared memory in postgresql.conf 
