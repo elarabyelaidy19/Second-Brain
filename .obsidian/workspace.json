@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Rails/Rails Base.md",
+                "file": "Database Systems/Postgresql.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Rails/Rails Base.md",
+                "file": "Database Systems/Postgresql.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Rails/Rails Base.md",
+                "file": "Database Systems/Postgresql.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Rails/Rails Base.md"
+                "file": "Database Systems/Postgresql.md"
               }
             }
           },
@@ -166,17 +166,19 @@
   },
   "active": "aac5c570f4221582",
   "lastOpenFiles": [
+    "Scripts/Useful Scripts.md",
+    "Database Systems/Postgresql.md",
+    "System Engineering/Linux.md",
+    "Rails/Rails Base.md",
     "TIL/2024-01-10.md",
     "TIL/2024-01-11.md",
     "Conferences/Rails Talks.md",
-    "System Engineering/Linux.md",
     "Rails/RailsConf 2023.md",
     "Conferences/Ruby Talks.md",
     "Rails/Database.md",
     "System Engineering/Computer Networking Fundamentals.md",
     "System Engineering/Eurekas.md",
     "System Engineering/Operating Systems Fundamentals.md",
-    "Scripts/Useful Scripts.md",
     "Rails/TIL.md",
     "Tools/Docker.md",
     "Conferences/Misc.md",
@@ -188,11 +190,9 @@
     "Rails/Gems.md",
     "Rails/Rails Patterns.md",
     "TIL/2023-12-05.md",
-    "Rails/Rails Base.md",
     "Ruby/Memory Management.md",
     "TIL/Untitled.md",
     "Rails/Rails performance CheatSheet.md",
-    "Misc/Index.md",
     "Scripts",
     "Work",
     "Misc",
