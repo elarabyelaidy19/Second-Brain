@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "1fd2cb96755ba3e7",
+        "id": "67c2ad080fbabe33",
         "type": "tabs",
         "children": [
           {
-            "id": "6588c1795d0008d7",
+            "id": "c4b7362846677ee0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Database Systems/Postgresql.md",
+                "file": "Conferences/Ruby Talks.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Database Systems/Postgresql.md",
+                "file": "Conferences/Ruby Talks.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Database Systems/Postgresql.md",
+                "file": "Conferences/Ruby Talks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Database Systems/Postgresql.md"
+                "file": "Conferences/Ruby Talks.md"
               }
             }
           },
@@ -164,11 +164,13 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "6588c1795d0008d7",
+  "active": "c4b7362846677ee0",
   "lastOpenFiles": [
-    "System Engineering/Linux.md",
+    "Conferences/Misc.md",
+    "Conferences/Rails Talks.md",
     "Scripts/Useful Scripts.md",
     "Database Systems/Postgresql.md",
+    "System Engineering/Linux.md",
     "Rails/Database Performance.md",
     "Rails/Rails new.md",
     "Performance Benchmark.md",
@@ -179,7 +181,6 @@
     "Rails/Rails Base.md",
     "TIL/2024-01-10.md",
     "TIL/2024-01-11.md",
-    "Conferences/Rails Talks.md",
     "Rails/RailsConf 2023.md",
     "Conferences/Ruby Talks.md",
     "System Engineering/Computer Networking Fundamentals.md",
@@ -187,7 +188,6 @@
     "System Engineering/Operating Systems Fundamentals.md",
     "Rails/TIL.md",
     "Tools/Docker.md",
-    "Conferences/Misc.md",
     "README.md",
     "Security/Authentication.md",
     "Conferences",

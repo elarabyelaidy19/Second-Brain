@@ -10,7 +10,7 @@ find . -name '*.rb' | xargs wc -l
 	kill -9 PID	
 	```
 
-- run rails on differnt port `
+- run rails on different port `
 ```shell 
 rails s -p PortNumber
 ```
