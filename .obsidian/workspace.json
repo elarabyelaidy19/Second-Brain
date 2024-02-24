@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Conferences/Ruby Talks.md",
+                "file": "Scripts/Useful Scripts.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Conferences/Ruby Talks.md",
+                "file": "Scripts/Useful Scripts.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Conferences/Ruby Talks.md",
+                "file": "Scripts/Useful Scripts.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Conferences/Ruby Talks.md"
+                "file": "Scripts/Useful Scripts.md"
               }
             }
           },
@@ -166,11 +166,15 @@
   },
   "active": "c4b7362846677ee0",
   "lastOpenFiles": [
+    "TIL/2024-01-11.md",
+    "TIL/2024-01-10.md",
+    "System Engineering/Eurekas.md",
+    "System Engineering/Linux.md",
+    "Conferences/Ruby Talks.md",
     "Conferences/Misc.md",
     "Conferences/Rails Talks.md",
     "Scripts/Useful Scripts.md",
     "Database Systems/Postgresql.md",
-    "System Engineering/Linux.md",
     "Rails/Database Performance.md",
     "Rails/Rails new.md",
     "Performance Benchmark.md",
@@ -179,12 +183,8 @@
     "Rails/PostGIS.md",
     "Rails/Database.md",
     "Rails/Rails Base.md",
-    "TIL/2024-01-10.md",
-    "TIL/2024-01-11.md",
     "Rails/RailsConf 2023.md",
-    "Conferences/Ruby Talks.md",
     "System Engineering/Computer Networking Fundamentals.md",
-    "System Engineering/Eurekas.md",
     "System Engineering/Operating Systems Fundamentals.md",
     "Rails/TIL.md",
     "Tools/Docker.md",
