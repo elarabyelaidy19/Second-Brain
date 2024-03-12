@@ -13,13 +13,24 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Scripts/Useful Scripts.md",
+                "file": "Excalidraw/Untitled.md",
                 "mode": "source",
                 "source": false
               }
             }
+          },
+          {
+            "id": "02c96c8c063718c3",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2024-03-10 13.34.49.excalidraw.md"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Scripts/Useful Scripts.md",
+                "file": "Excalidraw/Drawing 2024-03-10 13.34.49.excalidraw.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -102,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Scripts/Useful Scripts.md",
+                "file": "Excalidraw/Drawing 2024-03-10 13.34.49.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Scripts/Useful Scripts.md"
+                "file": "Excalidraw/Drawing 2024-03-10 13.34.49.excalidraw.md"
               }
             }
           },
@@ -164,8 +175,11 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "c4b7362846677ee0",
+  "active": "02c96c8c063718c3",
   "lastOpenFiles": [
+    "Excalidraw/Untitled.md",
+    "Excalidraw/Drawing 2024-03-10 13.34.49.excalidraw.md",
+    "Scripts/Useful Scripts.md",
     "TIL/2024-01-11.md",
     "TIL/2024-01-10.md",
     "System Engineering/Eurekas.md",
@@ -173,7 +187,6 @@
     "Conferences/Ruby Talks.md",
     "Conferences/Misc.md",
     "Conferences/Rails Talks.md",
-    "Scripts/Useful Scripts.md",
     "Database Systems/Postgresql.md",
     "Rails/Database Performance.md",
     "Rails/Rails new.md",
@@ -191,8 +204,6 @@
     "README.md",
     "Security/Authentication.md",
     "Conferences",
-    "Rails/Gems.md",
-    "Rails/Rails Patterns.md",
     "Scripts",
     "Work",
     "Misc",
