@@ -18,19 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "02c96c8c063718c3",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/Drawing 2024-03-10 13.34.49.excalidraw.md"
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -96,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Excalidraw/Drawing 2024-03-10 13.34.49.excalidraw.md",
+                "file": "Excalidraw/Untitled.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -113,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Excalidraw/Drawing 2024-03-10 13.34.49.excalidraw.md",
+                "file": "Excalidraw/Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Excalidraw/Drawing 2024-03-10 13.34.49.excalidraw.md"
+                "file": "Excalidraw/Untitled.md"
               }
             }
           },
@@ -175,10 +164,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "02c96c8c063718c3",
+  "active": "c4b7362846677ee0",
   "lastOpenFiles": [
-    "Excalidraw/Untitled.md",
     "Excalidraw/Drawing 2024-03-10 13.34.49.excalidraw.md",
+    "Excalidraw/Untitled.md",
     "Scripts/Useful Scripts.md",
     "TIL/2024-01-11.md",
     "TIL/2024-01-10.md",
